@@ -1,6 +1,7 @@
 **/cmake-build-debug
 **/cmake-build-wsl
 **/latex
+**/.idea
 /CMakeLists.txt
 /Doxyfile
 
