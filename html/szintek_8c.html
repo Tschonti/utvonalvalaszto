@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Útvonalválaszt-O: szintek.c fájlreferencia</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Útvonalválaszt-O
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Keresés');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Függvények</a>  </div>
+  <div class="headertitle">
+<div class="title">szintek.c fájlreferencia</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>A szintek betöltését és kezelését leíró függvényeket tartlmazó modul.  
+<a href="#details">Részletek...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="szintek_8h_source.html">szintek.h</a>&quot;</code><br />
+<code>#include &quot;egyeb.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="toplista_8h_source.html">toplista.h</a>&quot;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &quot;econio.h&quot;</code><br />
+<code>#include &quot;debugmalloc.h&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Függvények</h2></td></tr>
+<tr class="memitem:a87872265a07732ec2b3a28cd2c604e9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_szintek.html">Szintek</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="szintek_8c.html#a87872265a07732ec2b3a28cd2c604e9e">szintek_betolt</a> (void)</td></tr>
+<tr class="memdesc:a87872265a07732ec2b3a28cd2c604e9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Betölti a "levels.fs" fájlból a szinteket egy dinamikusan foglalt, háromdimenziós tömbbe.  <a href="szintek_8c.html#a87872265a07732ec2b3a28cd2c604e9e">Részletek...</a><br /></td></tr>
+<tr class="separator:a87872265a07732ec2b3a28cd2c604e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d6d1871bd9b20ca43be7363f013c20d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="szintek_8c.html#a1d6d1871bd9b20ca43be7363f013c20d">jatek_indul</a> (int szint, int pont)</td></tr>
+<tr class="memdesc:a1d6d1871bd9b20ca43be7363f013c20d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elindítja a játékot a megadott szintről és a megadott kezdőponttal.  <a href="szintek_8c.html#a1d6d1871bd9b20ca43be7363f013c20d">Részletek...</a><br /></td></tr>
+<tr class="separator:a1d6d1871bd9b20ca43be7363f013c20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a068e352b6debcd2c73060209eb5037e1"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="szintek_8c.html#a068e352b6debcd2c73060209eb5037e1">kovi_szint</a> (<a class="el" href="struct_szintek.html">Szintek</a> meretek, int *idealis)</td></tr>
+<tr class="memdesc:a068e352b6debcd2c73060209eb5037e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A paraméterben megadot szint indítása.  <a href="szintek_8c.html#a068e352b6debcd2c73060209eb5037e1">Részletek...</a><br /></td></tr>
+<tr class="separator:a068e352b6debcd2c73060209eb5037e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe7637a444fddfae077f8b9d0a6f1250"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="szintek_8c.html#afe7637a444fddfae077f8b9d0a6f1250">palya_nyomtat</a> (<a class="el" href="struct_pozicio.html">Pozicio</a> p, <a class="el" href="struct_szintek.html">Szintek</a> meretek, int time)</td></tr>
+<tr class="memdesc:afe7637a444fddfae077f8b9d0a6f1250"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konzolba nyomtatja az aktuális pályát.  <a href="szintek_8c.html#afe7637a444fddfae077f8b9d0a6f1250">Részletek...</a><br /></td></tr>
+<tr class="separator:afe7637a444fddfae077f8b9d0a6f1250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfe1589c7c97a9977a20a8f60aa9d05a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="szintek_8c.html#acfe1589c7c97a9977a20a8f60aa9d05a">palya_vegso_nyomtat</a> (<a class="el" href="struct_pozicio.html">Pozicio</a> p, <a class="el" href="struct_szintek.html">Szintek</a> meretek, int time, bool **idealis)</td></tr>
+<tr class="memdesc:acfe1589c7c97a9977a20a8f60aa9d05a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="szintek_8c.html#afe7637a444fddfae077f8b9d0a6f1250" title="Konzolba nyomtatja az aktuális pályát.">palya_nyomtat()</a> függvényhez hasonlóan kinyomtatja a képernyőre a pályát, de nem csak a játkos útvonalával, hanem az ideális útvonallal is.  <a href="szintek_8c.html#acfe1589c7c97a9977a20a8f60aa9d05a">Részletek...</a><br /></td></tr>
+<tr class="separator:acfe1589c7c97a9977a20a8f60aa9d05a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a8739a3f0790029fbe7b8a1502413e6"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="szintek_8c.html#a6a8739a3f0790029fbe7b8a1502413e6">checkif_building</a> (<a class="el" href="struct_pozicio.html">Pozicio</a> p, <a class="el" href="struct_szintek.html">Szintek</a> meretek)</td></tr>
+<tr class="memdesc:a6a8739a3f0790029fbe7b8a1502413e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Megnézi, hogy a játékos éppen épület mezőn áll-e, vagy a pályán kívül van-e.  <a href="szintek_8c.html#a6a8739a3f0790029fbe7b8a1502413e6">Részletek...</a><br /></td></tr>
+<tr class="separator:a6a8739a3f0790029fbe7b8a1502413e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad41d0ab63abd5fda2375a3ac0b8c8b78"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="szintek_8c.html#ad41d0ab63abd5fda2375a3ac0b8c8b78">checkif_finish</a> (<a class="el" href="struct_pozicio.html">Pozicio</a> p, <a class="el" href="struct_szintek.html">Szintek</a> meretek)</td></tr>
+<tr class="memdesc:ad41d0ab63abd5fda2375a3ac0b8c8b78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Megnézi, hogy a játékos éppen a cél mezőn áll-e (bal alsó sarok)  <a href="szintek_8c.html#ad41d0ab63abd5fda2375a3ac0b8c8b78">Részletek...</a><br /></td></tr>
+<tr class="separator:ad41d0ab63abd5fda2375a3ac0b8c8b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Részletes leírás</h2>
+<div class="textblock"><p>A szintek betöltését és kezelését leíró függvényeket tartlmazó modul. </p>
+</div><h2 class="groupheader">Függvények dokumentációja</h2>
+<a id="a6a8739a3f0790029fbe7b8a1502413e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a8739a3f0790029fbe7b8a1502413e6">&#9670;&nbsp;</a></span>checkif_building()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool checkif_building </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_pozicio.html">Pozicio</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_szintek.html">Szintek</a>&#160;</td>
+          <td class="paramname"><em>meretek</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Megnézi, hogy a játékos éppen épület mezőn áll-e, vagy a pályán kívül van-e. </p>
+<p>Akkor ad vissza igazat, ha a játékos olyan mezőn áll, ahol nem állhatna. </p><dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Játékos jelenlegi pozíciója </td></tr>
+    <tr><td class="paramname">meretek</td><td>A <a class="el" href="struct_szintek.html" title="A szintek tömbjét és méreteit tartalmazó struktúra.">Szintek</a> méreteit és tömbjét tartalmazó struktúra </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Visszatérési érték</dt><dd>Igaz, ha épület mezőn vagy a pályán kívül áll a játékos, különben hamis </dd></dl>
+
+</div>
+</div>
+<a id="ad41d0ab63abd5fda2375a3ac0b8c8b78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad41d0ab63abd5fda2375a3ac0b8c8b78">&#9670;&nbsp;</a></span>checkif_finish()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool checkif_finish </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_pozicio.html">Pozicio</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_szintek.html">Szintek</a>&#160;</td>
+          <td class="paramname"><em>meretek</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Megnézi, hogy a játékos éppen a cél mezőn áll-e (bal alsó sarok) </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Játékos jelenlegi pozíciója </td></tr>
+    <tr><td class="paramname">meretek</td><td>A <a class="el" href="struct_szintek.html" title="A szintek tömbjét és méreteit tartalmazó struktúra.">Szintek</a> méreteit és tömbjét tartalmazó struktúra </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Visszatérési érték</dt><dd>Igaz, ha a játékos a célban van, egyébként hamis. </dd></dl>
+
+</div>
+</div>
+<a id="a1d6d1871bd9b20ca43be7363f013c20d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d6d1871bd9b20ca43be7363f013c20d">&#9670;&nbsp;</a></span>jatek_indul()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jatek_indul </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>szint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pont</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Elindítja a játékot a megadott szintről és a megadott kezdőponttal. </p>
+<p>Végigviszi a játékost az összes szinten a <a class="el" href="szintek_8c.html#a068e352b6debcd2c73060209eb5037e1" title="A paraméterben megadot szint indítása.">kovi_szint()</a> függvénnyel, ha a játékos nem lép ki közben. Miután az összes szinttel végzett, betölti a toplistát és új eredményt vesz fel az <a class="el" href="toplista_8c.html#a57ecf49628d13ea36e01bea9c0161779" title="Megállapítja egy új eredményről, hogy az felkerül-e a toplistára.">uj_eredmeny()</a> függvénnyel. Végül kiírja a toplistát a képernyőre, és felszabadítja az elfoglalt memóriaterületeket a <a class="el" href="toplista_8c.html#afdfb1db09493f19b67795d53b23787ed" title="Kinyomtatja a képernyőre az aktuális toplistát, majd felszabadítja a dinamikus tömböt.">toplista_nyomtat()</a> függvénnyel.</p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">szint</td><td>Erről a szintről fog indulni a játék, 0-tól indexelve </td></tr>
+    <tr><td class="paramname">pont</td><td>Ennyi ponttal kezdi a játékos a játékot. Mindkettő 0, ha új játékot kezd a felhasználó. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a068e352b6debcd2c73060209eb5037e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a068e352b6debcd2c73060209eb5037e1">&#9670;&nbsp;</a></span>kovi_szint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int kovi_szint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_szintek.html">Szintek</a>&#160;</td>
+          <td class="paramname"><em>meretek</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>idealis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A paraméterben megadot szint indítása. </p>
+<p>Folyamatosan nyomtatja a térképet, számolja az eltelt időt és a lépéseket, valamit mozgatja a játékos karakterét. Egészen addig, amíg az idő lejár vagy a játékos eléri a célt. Ekkor meghatározza a legrövidebb útvonalat a <a class="el" href="utvonalkereso_8c.html#af2b829eca75dda71d7237c5e801411d2" title="Megkeresi a legrövidebb útat az aktív szinten a rajt és a cél között (a fájl többi függvényének segít...">legrovidebb()</a> fügvénnyel, és meg is mutatja a játékosnak. A szint futása közben ESC nyomására kilép a programból a <a class="el" href="egyeb_8c.html#a0c92051ae14c03e7016cb00a3d2998fb" title="Kilép a programból a megadott hibakóddal és hibaüzenettel, és azt az errorlog.txt fájlba is menti.">kilep()</a> fuggvénnyel. </p><dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meretek</td><td>A <a class="el" href="struct_szintek.html" title="A szintek tömbjét és méreteit tartalmazó struktúra.">Szintek</a> méreteit és tömbjét tartalmazó struktúra </td></tr>
+    <tr><td class="paramname">idealis</td><td>Pointer egy integerre, ahova menti a függvény az adott szint ideális útvonalának hosszát. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Visszatérési érték</dt><dd>A szerzett pontok száma </dd></dl>
+
+</div>
+</div>
+<a id="afe7637a444fddfae077f8b9d0a6f1250"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe7637a444fddfae077f8b9d0a6f1250">&#9670;&nbsp;</a></span>palya_nyomtat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void palya_nyomtat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_pozicio.html">Pozicio</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_szintek.html">Szintek</a>&#160;</td>
+          <td class="paramname"><em>meretek</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Konzolba nyomtatja az aktuális pályát. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td><a class="el" href="struct_pozicio.html" title="Egy jelenlegi pozíció a cellák mátrixában.">Pozicio</a> struktúr, a játékos jelenlegi x és y pozíciója. </td></tr>
+    <tr><td class="paramname">meretek</td><td>A <a class="el" href="struct_szintek.html" title="A szintek tömbjét és méreteit tartalmazó struktúra.">Szintek</a> méreteit és tömbjét tartalmazó struktúra </td></tr>
+    <tr><td class="paramname">time</td><td>Hátralevő idő másodpercben </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acfe1589c7c97a9977a20a8f60aa9d05a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfe1589c7c97a9977a20a8f60aa9d05a">&#9670;&nbsp;</a></span>palya_vegso_nyomtat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void palya_vegso_nyomtat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_pozicio.html">Pozicio</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_szintek.html">Szintek</a>&#160;</td>
+          <td class="paramname"><em>meretek</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool **&#160;</td>
+          <td class="paramname"><em>idealis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A <a class="el" href="szintek_8c.html#afe7637a444fddfae077f8b9d0a6f1250" title="Konzolba nyomtatja az aktuális pályát.">palya_nyomtat()</a> függvényhez hasonlóan kinyomtatja a képernyőre a pályát, de nem csak a játkos útvonalával, hanem az ideális útvonallal is. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>A játékos pozíciója </td></tr>
+    <tr><td class="paramname">meretek</td><td>A <a class="el" href="struct_szintek.html" title="A szintek tömbjét és méreteit tartalmazó struktúra.">Szintek</a> méreteit és tömbjét tartalmazó struktúra </td></tr>
+    <tr><td class="paramname">time</td><td>Hátralévő idő másodpercben (ilyenkor ez már fix, nem változik) </td></tr>
+    <tr><td class="paramname">idealis</td><td>Kétdimenziós bool tömb, aminek minden mezője pontosan akkor igaz, ha az ideális útvonal átmegy azon a mezőn. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a87872265a07732ec2b3a28cd2c604e9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87872265a07732ec2b3a28cd2c604e9e">&#9670;&nbsp;</a></span>szintek_betolt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_szintek.html">Szintek</a> szintek_betolt </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Betölti a "levels.fs" fájlból a szinteket egy dinamikusan foglalt, háromdimenziós tömbbe. </p>
+<p>Ha a fájlt nem tudja megnyitni, vagy érvénytelen, akkor kilép a programból a <a class="el" href="egyeb_8c.html#a0c92051ae14c03e7016cb00a3d2998fb" title="Kilép a programból a megadott hibakóddal és hibaüzenettel, és azt az errorlog.txt fájlba is menti.">kilep()</a> függvénnyel. </p><dl class="section return"><dt>Visszatérési érték</dt><dd>A <a class="el" href="struct_szintek.html" title="A szintek tömbjét és méreteit tartalmazó struktúra.">Szintek</a> méreteit és tömbjét tartalmazó struktúra </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Készítette&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

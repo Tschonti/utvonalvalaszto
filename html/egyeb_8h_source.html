@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Útvonalválaszt-O: egyeb.h Forrásfájl</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Útvonalválaszt-O
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Keresés');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">egyeb.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="egyeb_8h.html">Ugrás a fájl dokumentációjához.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef EGYEB_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define EGYEB_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="szintek_8h.html">szintek.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="utvonalkereso_8h.html">utvonalkereso.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keywordtype">int</span> <a class="code" href="egyeb_8h.html#ab38be97ab326a2111f287c633cd073df">szam_beolvas</a>(<span class="keywordtype">int</span> min, <span class="keywordtype">int</span> max);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keywordtype">void</span> <a class="code" href="egyeb_8h.html#a4c46f193b1aef6608f681b0662b7e0d8">jatek_ment</a>(<span class="keywordtype">int</span> pont, <a class="code" href="struct_szintek.html">Szintek</a> meretek);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keywordtype">int</span> <a class="code" href="egyeb_8h.html#a85c1c3e359f4cfa443c12bf603bdc2c6">jatek_betolt</a>(<span class="keywordtype">int</span> *szint, <span class="keywordtype">int</span> *pont);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keywordtype">void</span> <a class="code" href="egyeb_8h.html#a88494aeaece3cfc8008d4143ce376f5f">segitseg</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<a class="code" href="szintek_8h.html#ad123fd42f5c77df753196853d1a13613">Cella</a>*** <a class="code" href="egyeb_8h.html#ada1c71e747453feaac872c514a80b04d">cella_tomb_foglal</a>(<a class="code" href="struct_szintek.html">Szintek</a> meretek);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<a class="code" href="struct_csucs.html">Csucs</a> ***<a class="code" href="egyeb_8h.html#a91725c40129996715ec3391c5feba66d">csucs_tomb_foglal</a>(<a class="code" href="struct_szintek.html">Szintek</a> meretek);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordtype">bool</span> **<a class="code" href="egyeb_8h.html#ad877baf77f6e032dfd9d421f3fd64b5d">bool_tomb_foglal</a>(<a class="code" href="struct_szintek.html">Szintek</a> meretek);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keywordtype">void</span> <a class="code" href="egyeb_8h.html#a12f1c4785570d245cadaf8fe68c11ef7">cella_tomb_szabadit</a>(<a class="code" href="struct_szintek.html">Szintek</a> meretek);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">void</span> <a class="code" href="egyeb_8h.html#aaa9bce48fdd180817af3634871b49483">kilep</a>(<span class="keywordtype">int</span> code, <span class="keywordtype">char</span> s[100], <a class="code" href="struct_szintek.html">Szintek</a> meretek);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">int</span> <a class="code" href="egyeb_8h.html#a7f3db509b04b31b00f287fa6b8959fad">menu</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aegyeb_8h_html_a88494aeaece3cfc8008d4143ce376f5f"><div class="ttname"><a href="egyeb_8h.html#a88494aeaece3cfc8008d4143ce376f5f">segitseg</a></div><div class="ttdeci">void segitseg(void)</div><div class="ttdoc">Kiírja a segítséget a képernyőre.</div><div class="ttdef"><b>Definition:</b> egyeb.c:74</div></div>
+<div class="ttc" id="autvonalkereso_8h_html"><div class="ttname"><a href="utvonalkereso_8h.html">utvonalkereso.h</a></div></div>
+<div class="ttc" id="aszintek_8h_html_ad123fd42f5c77df753196853d1a13613"><div class="ttname"><a href="szintek_8h.html#ad123fd42f5c77df753196853d1a13613">Cella</a></div><div class="ttdeci">Cella</div><div class="ttdoc">Egy cella a pályán.</div><div class="ttdef"><b>Definition:</b> szintek.h:10</div></div>
+<div class="ttc" id="aszintek_8h_html"><div class="ttname"><a href="szintek_8h.html">szintek.h</a></div></div>
+<div class="ttc" id="astruct_csucs_html"><div class="ttname"><a href="struct_csucs.html">Csucs</a></div><div class="ttdoc">Egy csúcsot reprezentáló struktúra.</div><div class="ttdef"><b>Definition:</b> utvonalkereso.h:20</div></div>
+<div class="ttc" id="astruct_szintek_html"><div class="ttname"><a href="struct_szintek.html">Szintek</a></div><div class="ttdoc">A szintek tömbjét és méreteit tartalmazó struktúra.</div><div class="ttdef"><b>Definition:</b> szintek.h:30</div></div>
+<div class="ttc" id="aegyeb_8h_html_a91725c40129996715ec3391c5feba66d"><div class="ttname"><a href="egyeb_8h.html#a91725c40129996715ec3391c5feba66d">csucs_tomb_foglal</a></div><div class="ttdeci">Csucs *** csucs_tomb_foglal(Szintek meretek)</div><div class="ttdoc">Foglal egy dinamikus, kétdimenziós tömböt, aminek minden eleme egy csúcsra mutató pointer lesz,...</div><div class="ttdef"><b>Definition:</b> egyeb.c:125</div></div>
+<div class="ttc" id="aegyeb_8h_html_a4c46f193b1aef6608f681b0662b7e0d8"><div class="ttname"><a href="egyeb_8h.html#a4c46f193b1aef6608f681b0662b7e0d8">jatek_ment</a></div><div class="ttdeci">void jatek_ment(int pont, Szintek meretek)</div><div class="ttdoc">Fájlba ment egy játékot.</div><div class="ttdef"><b>Definition:</b> egyeb.c:40</div></div>
+<div class="ttc" id="aegyeb_8h_html_a7f3db509b04b31b00f287fa6b8959fad"><div class="ttname"><a href="egyeb_8h.html#a7f3db509b04b31b00f287fa6b8959fad">menu</a></div><div class="ttdeci">int menu(void)</div><div class="ttdoc">Kiírja a menü opcióit, majd bekéri a felhasználó választását a szam_beolvas() függvénnyel.</div><div class="ttdef"><b>Definition:</b> egyeb.c:227</div></div>
+<div class="ttc" id="aegyeb_8h_html_ada1c71e747453feaac872c514a80b04d"><div class="ttname"><a href="egyeb_8h.html#ada1c71e747453feaac872c514a80b04d">cella_tomb_foglal</a></div><div class="ttdeci">Cella *** cella_tomb_foglal(Szintek meretek)</div><div class="ttdoc">Foglal egy dinamikus, háromdimenziós tömböt.</div><div class="ttdef"><b>Definition:</b> egyeb.c:84</div></div>
+<div class="ttc" id="aegyeb_8h_html_ad877baf77f6e032dfd9d421f3fd64b5d"><div class="ttname"><a href="egyeb_8h.html#ad877baf77f6e032dfd9d421f3fd64b5d">bool_tomb_foglal</a></div><div class="ttdeci">bool ** bool_tomb_foglal(Szintek meretek)</div><div class="ttdoc">Foglal egy dinamikus, kétdimenziós tömböt, aminek minden eleme egy boolean érték, ezeket mind hamisra...</div><div class="ttdef"><b>Definition:</b> egyeb.c:153</div></div>
+<div class="ttc" id="aegyeb_8h_html_a12f1c4785570d245cadaf8fe68c11ef7"><div class="ttname"><a href="egyeb_8h.html#a12f1c4785570d245cadaf8fe68c11ef7">cella_tomb_szabadit</a></div><div class="ttdeci">void cella_tomb_szabadit(Szintek meretek)</div><div class="ttdoc">Felszabadítja a meretek struktúra dinamukis tömbjét.</div><div class="ttdef"><b>Definition:</b> egyeb.c:180</div></div>
+<div class="ttc" id="aegyeb_8h_html_ab38be97ab326a2111f287c633cd073df"><div class="ttname"><a href="egyeb_8h.html#ab38be97ab326a2111f287c633cd073df">szam_beolvas</a></div><div class="ttdeci">int szam_beolvas(int min, int max)</div><div class="ttdoc">Bekér a felhasználótól egy számot.</div><div class="ttdef"><b>Definition:</b> egyeb.c:19</div></div>
+<div class="ttc" id="aegyeb_8h_html_a85c1c3e359f4cfa443c12bf603bdc2c6"><div class="ttname"><a href="egyeb_8h.html#a85c1c3e359f4cfa443c12bf603bdc2c6">jatek_betolt</a></div><div class="ttdeci">int jatek_betolt(int *szint, int *pont)</div><div class="ttdoc">Betölt egy korábban lementett játékot fájlból.</div><div class="ttdef"><b>Definition:</b> egyeb.c:55</div></div>
+<div class="ttc" id="aegyeb_8h_html_aaa9bce48fdd180817af3634871b49483"><div class="ttname"><a href="egyeb_8h.html#aaa9bce48fdd180817af3634871b49483">kilep</a></div><div class="ttdeci">void kilep(int code, char s[100], Szintek meretek)</div><div class="ttdoc">Kilép a programból a megadott hibakóddal és hibaüzenettel, és azt az errorlog.txt fájlba is menti.</div><div class="ttdef"><b>Definition:</b> egyeb.c:200</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Készítette&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

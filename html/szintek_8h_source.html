@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Útvonalválaszt-O: szintek.h Forrásfájl</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Útvonalválaszt-O
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Keresés');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">szintek.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="szintek_8h.html">Ugrás a fájl dokumentációjához.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef szintek_h</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define szintek_h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="szintek_8h.html#ad123fd42f5c77df753196853d1a13613a2f48f810b45a94efd5bcae732e4655b8">   10</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {<a class="code" href="szintek_8h.html#ad123fd42f5c77df753196853d1a13613a2f48f810b45a94efd5bcae732e4655b8">epulet</a>, </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="szintek_8h.html#ad123fd42f5c77df753196853d1a13613a1626e03241cc3202db1eca09ea917a29">   11</a></span>&#160;              <a class="code" href="szintek_8h.html#ad123fd42f5c77df753196853d1a13613a1626e03241cc3202db1eca09ea917a29">utca</a>,   </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;              <a class="code" href="szintek_8h.html#ad123fd42f5c77df753196853d1a13613a310965146547a2c50249b9c930f1a0ff">u_jart</a>  </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="szintek_8h.html#ad123fd42f5c77df753196853d1a13613a310965146547a2c50249b9c930f1a0ff">   13</a></span>&#160;} <a class="code" href="szintek_8h.html#ad123fd42f5c77df753196853d1a13613">Cella</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="struct_pozicio.html">   18</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="struct_pozicio.html#a6150e0515f7202e2fb518f7206ed97dc">   19</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_pozicio.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>,  </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_pozicio.html#a0a2f84ed7838f07779ae24c5a9086d33">   20</a></span>&#160;    <a class="code" href="struct_pozicio.html#a0a2f84ed7838f07779ae24c5a9086d33">y</a>;      </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;} <a class="code" href="struct_pozicio.html">Pozicio</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="struct_szintek.html">   32</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_szintek.html#a39a438b9fb5e0cd6c9fd486544e95d02">   33</a></span>&#160;    <a class="code" href="szintek_8h.html#ad123fd42f5c77df753196853d1a13613">Cella</a> ***<a class="code" href="struct_szintek.html#a39a438b9fb5e0cd6c9fd486544e95d02">terkep</a>;    </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="struct_szintek.html#a98ccad2bd9bbbde03f029a8bc431f61f">   34</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_szintek.html#a98ccad2bd9bbbde03f029a8bc431f61f">szintszam</a>;      </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="struct_szintek.html#a8758308d1246b71e1836fe33b32d87c8">   35</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_szintek.html#a8758308d1246b71e1836fe33b32d87c8">mag</a>;            </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="struct_szintek.html#ae2a7a0deac3326246eda4b4bf1d17360">   36</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_szintek.html#ae2a7a0deac3326246eda4b4bf1d17360">hossz</a>;          </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="struct_szintek.html#aa0a2ab48a1d0ed9ab978c567b6583a01">   37</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_szintek.html#aa0a2ab48a1d0ed9ab978c567b6583a01">aktiv_szint</a>;    </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="struct_szintek.html#a4306589a3004f43f79038be95423499f">   38</a></span>&#160;    <span class="keywordtype">int</span> iranykonstansok[4][2];  </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;} <a class="code" href="struct_szintek.html">Szintek</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="struct_szintek.html">Szintek</a> <a class="code" href="szintek_8c.html#a87872265a07732ec2b3a28cd2c604e9e">szintek_betolt</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> <a class="code" href="szintek_8c.html#a1d6d1871bd9b20ca43be7363f013c20d">jatek_indul</a>(<span class="keywordtype">int</span> szint, <span class="keywordtype">int</span> pont);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="szintek_8c.html#a068e352b6debcd2c73060209eb5037e1">kovi_szint</a>(<a class="code" href="struct_szintek.html">Szintek</a> meretek, <span class="keywordtype">int</span> *idealis);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="szintek_8c.html#afe7637a444fddfae077f8b9d0a6f1250">palya_nyomtat</a>(<a class="code" href="struct_pozicio.html">Pozicio</a> p, <a class="code" href="struct_szintek.html">Szintek</a> meretek, <span class="keywordtype">int</span> time);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="szintek_8c.html#acfe1589c7c97a9977a20a8f60aa9d05a">palya_vegso_nyomtat</a>(<a class="code" href="struct_pozicio.html">Pozicio</a> p, <a class="code" href="struct_szintek.html">Szintek</a> meretek, <span class="keywordtype">int</span> time, <span class="keywordtype">bool</span> **idealis);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="szintek_8c.html#a6a8739a3f0790029fbe7b8a1502413e6">checkif_building</a>(<a class="code" href="struct_pozicio.html">Pozicio</a> p, <a class="code" href="struct_szintek.html">Szintek</a> meretek);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="szintek_8c.html#ad41d0ab63abd5fda2375a3ac0b8c8b78">checkif_finish</a>(<a class="code" href="struct_pozicio.html">Pozicio</a> p, <a class="code" href="struct_szintek.html">Szintek</a> meretek);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astruct_szintek_html_ae2a7a0deac3326246eda4b4bf1d17360"><div class="ttname"><a href="struct_szintek.html#ae2a7a0deac3326246eda4b4bf1d17360">Szintek::hossz</a></div><div class="ttdeci">int hossz</div><div class="ttdoc">A szintek hossza.</div><div class="ttdef"><b>Definition:</b> szintek.h:36</div></div>
+<div class="ttc" id="aszintek_8h_html_ad123fd42f5c77df753196853d1a13613a2f48f810b45a94efd5bcae732e4655b8"><div class="ttname"><a href="szintek_8h.html#ad123fd42f5c77df753196853d1a13613a2f48f810b45a94efd5bcae732e4655b8">epulet</a></div><div class="ttdeci">@ epulet</div><div class="ttdoc">Épület.</div><div class="ttdef"><b>Definition:</b> szintek.h:10</div></div>
+<div class="ttc" id="astruct_pozicio_html_a0a2f84ed7838f07779ae24c5a9086d33"><div class="ttname"><a href="struct_pozicio.html#a0a2f84ed7838f07779ae24c5a9086d33">Pozicio::y</a></div><div class="ttdeci">int y</div><div class="ttdoc">Y koordináta (0-tól indexelve)</div><div class="ttdef"><b>Definition:</b> szintek.h:20</div></div>
+<div class="ttc" id="astruct_pozicio_html"><div class="ttname"><a href="struct_pozicio.html">Pozicio</a></div><div class="ttdoc">Egy jelenlegi pozíció a cellák mátrixában.</div><div class="ttdef"><b>Definition:</b> szintek.h:18</div></div>
+<div class="ttc" id="aszintek_8h_html_ad123fd42f5c77df753196853d1a13613"><div class="ttname"><a href="szintek_8h.html#ad123fd42f5c77df753196853d1a13613">Cella</a></div><div class="ttdeci">Cella</div><div class="ttdoc">Egy cella a pályán.</div><div class="ttdef"><b>Definition:</b> szintek.h:10</div></div>
+<div class="ttc" id="aszintek_8c_html_afe7637a444fddfae077f8b9d0a6f1250"><div class="ttname"><a href="szintek_8c.html#afe7637a444fddfae077f8b9d0a6f1250">palya_nyomtat</a></div><div class="ttdeci">static void palya_nyomtat(Pozicio p, Szintek meretek, int time)</div><div class="ttdoc">Konzolba nyomtatja az aktuális pályát.</div><div class="ttdef"><b>Definition:</b> szintek.c:199</div></div>
+<div class="ttc" id="aszintek_8c_html_a068e352b6debcd2c73060209eb5037e1"><div class="ttname"><a href="szintek_8c.html#a068e352b6debcd2c73060209eb5037e1">kovi_szint</a></div><div class="ttdeci">static int kovi_szint(Szintek meretek, int *idealis)</div><div class="ttdoc">A paraméterben megadot szint indítása.</div><div class="ttdef"><b>Definition:</b> szintek.c:127</div></div>
+<div class="ttc" id="aszintek_8c_html_ad41d0ab63abd5fda2375a3ac0b8c8b78"><div class="ttname"><a href="szintek_8c.html#ad41d0ab63abd5fda2375a3ac0b8c8b78">checkif_finish</a></div><div class="ttdeci">static bool checkif_finish(Pozicio p, Szintek meretek)</div><div class="ttdoc">Megnézi, hogy a játékos éppen a cél mezőn áll-e (bal alsó sarok)</div><div class="ttdef"><b>Definition:</b> szintek.c:341</div></div>
+<div class="ttc" id="astruct_szintek_html"><div class="ttname"><a href="struct_szintek.html">Szintek</a></div><div class="ttdoc">A szintek tömbjét és méreteit tartalmazó struktúra.</div><div class="ttdef"><b>Definition:</b> szintek.h:32</div></div>
+<div class="ttc" id="astruct_szintek_html_a39a438b9fb5e0cd6c9fd486544e95d02"><div class="ttname"><a href="struct_szintek.html#a39a438b9fb5e0cd6c9fd486544e95d02">Szintek::terkep</a></div><div class="ttdeci">Cella *** terkep</div><div class="ttdoc">A háromdimenziós, dinamikusan foglalt tömb pointere.</div><div class="ttdef"><b>Definition:</b> szintek.h:33</div></div>
+<div class="ttc" id="aszintek_8c_html_acfe1589c7c97a9977a20a8f60aa9d05a"><div class="ttname"><a href="szintek_8c.html#acfe1589c7c97a9977a20a8f60aa9d05a">palya_vegso_nyomtat</a></div><div class="ttdeci">static void palya_vegso_nyomtat(Pozicio p, Szintek meretek, int time, bool **idealis)</div><div class="ttdoc">A palya_nyomtat() függvényhez hasonlóan kinyomtatja a képernyőre a pályát, de nem csak a játkos útvon...</div><div class="ttdef"><b>Definition:</b> szintek.c:246</div></div>
+<div class="ttc" id="astruct_szintek_html_a98ccad2bd9bbbde03f029a8bc431f61f"><div class="ttname"><a href="struct_szintek.html#a98ccad2bd9bbbde03f029a8bc431f61f">Szintek::szintszam</a></div><div class="ttdeci">int szintszam</div><div class="ttdoc">A szintek száma.</div><div class="ttdef"><b>Definition:</b> szintek.h:34</div></div>
+<div class="ttc" id="aszintek_8c_html_a1d6d1871bd9b20ca43be7363f013c20d"><div class="ttname"><a href="szintek_8c.html#a1d6d1871bd9b20ca43be7363f013c20d">jatek_indul</a></div><div class="ttdeci">void jatek_indul(int szint, int pont)</div><div class="ttdoc">Elindítja a játékot a megadott szintről és a megadott kezdőponttal.</div><div class="ttdef"><b>Definition:</b> szintek.c:76</div></div>
+<div class="ttc" id="aszintek_8h_html_ad123fd42f5c77df753196853d1a13613a1626e03241cc3202db1eca09ea917a29"><div class="ttname"><a href="szintek_8h.html#ad123fd42f5c77df753196853d1a13613a1626e03241cc3202db1eca09ea917a29">utca</a></div><div class="ttdeci">@ utca</div><div class="ttdoc">Utca, amin nem járt még a játékos.</div><div class="ttdef"><b>Definition:</b> szintek.h:11</div></div>
+<div class="ttc" id="aszintek_8c_html_a6a8739a3f0790029fbe7b8a1502413e6"><div class="ttname"><a href="szintek_8c.html#a6a8739a3f0790029fbe7b8a1502413e6">checkif_building</a></div><div class="ttdeci">static bool checkif_building(Pozicio p, Szintek meretek)</div><div class="ttdoc">Megnézi, hogy a játékos éppen épület mezőn áll-e, vagy a pályán kívül van-e.</div><div class="ttdef"><b>Definition:</b> szintek.c:328</div></div>
+<div class="ttc" id="aszintek_8h_html_ad123fd42f5c77df753196853d1a13613a310965146547a2c50249b9c930f1a0ff"><div class="ttname"><a href="szintek_8h.html#ad123fd42f5c77df753196853d1a13613a310965146547a2c50249b9c930f1a0ff">u_jart</a></div><div class="ttdeci">@ u_jart</div><div class="ttdoc">Utca, amin járt már a játékos.</div><div class="ttdef"><b>Definition:</b> szintek.h:12</div></div>
+<div class="ttc" id="aszintek_8c_html_a87872265a07732ec2b3a28cd2c604e9e"><div class="ttname"><a href="szintek_8c.html#a87872265a07732ec2b3a28cd2c604e9e">szintek_betolt</a></div><div class="ttdeci">Szintek szintek_betolt(void)</div><div class="ttdoc">Betölti a &quot;levels.fs&quot; fájlból a szinteket egy dinamikusan foglalt, háromdimenziós tömbbe.</div><div class="ttdef"><b>Definition:</b> szintek.c:21</div></div>
+<div class="ttc" id="astruct_pozicio_html_a6150e0515f7202e2fb518f7206ed97dc"><div class="ttname"><a href="struct_pozicio.html#a6150e0515f7202e2fb518f7206ed97dc">Pozicio::x</a></div><div class="ttdeci">int x</div><div class="ttdoc">X koordináta (0-tól indexelve)</div><div class="ttdef"><b>Definition:</b> szintek.h:19</div></div>
+<div class="ttc" id="astruct_szintek_html_a8758308d1246b71e1836fe33b32d87c8"><div class="ttname"><a href="struct_szintek.html#a8758308d1246b71e1836fe33b32d87c8">Szintek::mag</a></div><div class="ttdeci">int mag</div><div class="ttdoc">A szintek magassága.</div><div class="ttdef"><b>Definition:</b> szintek.h:35</div></div>
+<div class="ttc" id="astruct_szintek_html_aa0a2ab48a1d0ed9ab978c567b6583a01"><div class="ttname"><a href="struct_szintek.html#aa0a2ab48a1d0ed9ab978c567b6583a01">Szintek::aktiv_szint</a></div><div class="ttdeci">int aktiv_szint</div><div class="ttdoc">A jelenleg aktív szint sorszáma, 0-tól indexelve.</div><div class="ttdef"><b>Definition:</b> szintek.h:37</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Készítette&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

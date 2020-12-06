@@ -1,0 +1,766 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Útvonalválaszt-O: utvonalkereso.c fájlreferencia</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Útvonalválaszt-O
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Keresés');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Függvények</a>  </div>
+  <div class="headertitle">
+<div class="title">utvonalkereso.c fájlreferencia</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Ez a modul tartalmazza a legrövidebb útvonal megtalálásához szükséges függvényeket.  
+<a href="#details">Részletek...</a></p>
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="utvonalkereso_8h_source.html">utvonalkereso.h</a>&quot;</code><br />
+<code>#include &quot;egyeb.h&quot;</code><br />
+<code>#include &quot;debugmalloc.h&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Függvények</h2></td></tr>
+<tr class="memitem:af2b829eca75dda71d7237c5e801411d2"><td class="memItemLeft" align="right" valign="top">bool **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utvonalkereso_8c.html#af2b829eca75dda71d7237c5e801411d2">legrovidebb</a> (<a class="el" href="struct_szintek.html">Szintek</a> meretek, int *idealis)</td></tr>
+<tr class="memdesc:af2b829eca75dda71d7237c5e801411d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Megkeresi a legrövidebb útat az aktív szinten a rajt és a cél között (a fájl többi függvényének segítségével).  <a href="utvonalkereso_8c.html#af2b829eca75dda71d7237c5e801411d2">Részletek...</a><br /></td></tr>
+<tr class="separator:af2b829eca75dda71d7237c5e801411d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada577e3b07f789de089e008b8ab93bce"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utvonalkereso_8c.html#ada577e3b07f789de089e008b8ab93bce">graf_epit</a> (<a class="el" href="struct_csucs.html">Csucs</a> *cs, <a class="el" href="struct_csucs.html">Csucs</a> ***vizsgalt, <a class="el" href="struct_szintek.html">Szintek</a> meretek, int *meret)</td></tr>
+<tr class="memdesc:ada577e3b07f789de089e008b8ab93bce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rekurzív függvény, ami felépíti a gráf adatstruktúrát.  <a href="utvonalkereso_8c.html#ada577e3b07f789de089e008b8ab93bce">Részletek...</a><br /></td></tr>
+<tr class="separator:ada577e3b07f789de089e008b8ab93bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9aab43df11a3cecd98030db30650561"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utvonalkereso_8c.html#af9aab43df11a3cecd98030db30650561">graf_kilapit</a> (<a class="el" href="struct_csucs.html">Csucs</a> *cs, <a class="el" href="struct_csucs.html">Csucs</a> ***lista, int *n, bool **vizsgalt, int hossz)</td></tr>
+<tr class="memdesc:af9aab43df11a3cecd98030db30650561"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rekurzív függvény, ami csinál egy egydimneziós tömböt a gráfhoz, aminek minden eleme egy csúcsra mutat.  <a href="utvonalkereso_8c.html#af9aab43df11a3cecd98030db30650561">Részletek...</a><br /></td></tr>
+<tr class="separator:af9aab43df11a3cecd98030db30650561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff1dc1c7ae64f2a643ee1b95ce8314a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utvonalkereso_8c.html#abff1dc1c7ae64f2a643ee1b95ce8314a">dijkstra</a> (<a class="el" href="struct_csucs.html">Csucs</a> **lista, int meret)</td></tr>
+<tr class="memdesc:abff1dc1c7ae64f2a643ee1b95ce8314a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Függvény, ami megvalósítja a Dijkstra algoritmust a rajt és cél között.  <a href="utvonalkereso_8c.html#abff1dc1c7ae64f2a643ee1b95ce8314a">Részletek...</a><br /></td></tr>
+<tr class="separator:abff1dc1c7ae64f2a643ee1b95ce8314a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4f51539ca905e81cff11aa583814be8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utvonalkereso_8c.html#ac4f51539ca905e81cff11aa583814be8">laposgraf_szabadit</a> (<a class="el" href="struct_csucs.html">Csucs</a> ***lista, int meret)</td></tr>
+<tr class="memdesc:ac4f51539ca905e81cff11aa583814be8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Felszabadítja a gráf minden csúcsát, majd a tömböt amiben tároltuk őket.  <a href="utvonalkereso_8c.html#ac4f51539ca905e81cff11aa583814be8">Részletek...</a><br /></td></tr>
+<tr class="separator:ac4f51539ca905e81cff11aa583814be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6acc6d646cb877d529437da5d3cd0af9"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utvonalkereso_8c.html#a6acc6d646cb877d529437da5d3cd0af9">utca_teszt</a> (<a class="el" href="struct_pozicio.html">Pozicio</a> p, <a class="el" href="struct_szintek.html">Szintek</a> meretek)</td></tr>
+<tr class="memdesc:a6acc6d646cb877d529437da5d3cd0af9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Függvény, ami megvizsálja hogy az adott koordináta a pályán belül van-e és a mező utca-e.  <a href="utvonalkereso_8c.html#a6acc6d646cb877d529437da5d3cd0af9">Részletek...</a><br /></td></tr>
+<tr class="separator:a6acc6d646cb877d529437da5d3cd0af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54b5c474abf4fd43e458f97e35c2c653"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utvonalkereso_8c.html#a54b5c474abf4fd43e458f97e35c2c653">utak_szama</a> (<a class="el" href="struct_pozicio.html">Pozicio</a> p, <a class="el" href="struct_szintek.html">Szintek</a> meretek)</td></tr>
+<tr class="memdesc:a54b5c474abf4fd43e458f97e35c2c653"><td class="mdescLeft">&#160;</td><td class="mdescRight">Függvény, ami meghatározza, hogy az adott koordináták által meghatározott mezőnek hány szomszédja utca.  <a href="utvonalkereso_8c.html#a54b5c474abf4fd43e458f97e35c2c653">Részletek...</a><br /></td></tr>
+<tr class="separator:a54b5c474abf4fd43e458f97e35c2c653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f8ec901e0449f97f7a479433b8d9e40"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utvonalkereso_8c.html#a6f8ec901e0449f97f7a479433b8d9e40">kovi_utca</a> (<a class="el" href="struct_pozicio.html">Pozicio</a> *regi, <a class="el" href="struct_pozicio.html">Pozicio</a> *uj, <a class="el" href="struct_szintek.html">Szintek</a> meretek)</td></tr>
+<tr class="memdesc:a6f8ec901e0449f97f7a479433b8d9e40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ha egy mezőnek két szomszédja utca, akkor ez a függvény meghatározza, hogy melyik irányba kell tovább menni, hogy az utcán maradjunk.  <a href="utvonalkereso_8c.html#a6f8ec901e0449f97f7a479433b8d9e40">Részletek...</a><br /></td></tr>
+<tr class="separator:a6f8ec901e0449f97f7a479433b8d9e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27ba205792e976a388b9d89c2e1998ae"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="utvonalkereso_8h.html#a56df199b090c8161b176f04f084fd967">Irany</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utvonalkereso_8c.html#a27ba205792e976a388b9d89c2e1998ae">irany_hataroz</a> (<a class="el" href="struct_pozicio.html">Pozicio</a> p)</td></tr>
+<tr class="memdesc:a27ba205792e976a388b9d89c2e1998ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Függvény, ami meghatározza, hogy az adott x-y elmozdulással melyik irányba haladunk.  <a href="utvonalkereso_8c.html#a27ba205792e976a388b9d89c2e1998ae">Részletek...</a><br /></td></tr>
+<tr class="separator:a27ba205792e976a388b9d89c2e1998ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f92ed09a3a4f76441ae642012889f5f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utvonalkereso_8c.html#a0f92ed09a3a4f76441ae642012889f5f">csucs_init</a> (<a class="el" href="struct_csucs.html">Csucs</a> *cs, <a class="el" href="struct_pozicio.html">Pozicio</a> p, <a class="el" href="struct_szintek.html">Szintek</a> meretek)</td></tr>
+<tr class="memdesc:a0f92ed09a3a4f76441ae642012889f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kezdeti állapotba állít egy csúcsot.  <a href="utvonalkereso_8c.html#a0f92ed09a3a4f76441ae642012889f5f">Részletek...</a><br /></td></tr>
+<tr class="separator:a0f92ed09a3a4f76441ae642012889f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3ffec633cf6d8fe3f78c05b5693bca3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utvonalkereso_8c.html#af3ffec633cf6d8fe3f78c05b5693bca3">van_nem_latogatott</a> (<a class="el" href="struct_csucs.html">Csucs</a> **lista, int meret)</td></tr>
+<tr class="memdesc:af3ffec633cf6d8fe3f78c05b5693bca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Függvény, ami meghatározza, hogy van-e még meg nem látogatott csúcs a gráfban.  <a href="utvonalkereso_8c.html#af3ffec633cf6d8fe3f78c05b5693bca3">Részletek...</a><br /></td></tr>
+<tr class="separator:af3ffec633cf6d8fe3f78c05b5693bca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c62dd22fe189336833dd1deaa9ec7bc"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utvonalkereso_8c.html#a3c62dd22fe189336833dd1deaa9ec7bc">legkozelebbi</a> (<a class="el" href="struct_csucs.html">Csucs</a> **lista, int meret)</td></tr>
+<tr class="memdesc:a3c62dd22fe189336833dd1deaa9ec7bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Függvény, ami meghatározza azt a csúcsot, ami még nem volt vizsgálva, és a távolsága a legkisebb a kezdő csúcstól.  <a href="utvonalkereso_8c.html#a3c62dd22fe189336833dd1deaa9ec7bc">Részletek...</a><br /></td></tr>
+<tr class="separator:a3c62dd22fe189336833dd1deaa9ec7bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a001a3fe6dd47c9b12ac17fa4bdb84fff"><td class="memItemLeft" align="right" valign="top">static bool **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utvonalkereso_8c.html#a001a3fe6dd47c9b12ac17fa4bdb84fff">matrix_letrehoz</a> (<a class="el" href="struct_csucs.html">Csucs</a> **lista, int meret, <a class="el" href="struct_szintek.html">Szintek</a> meretek, int *idealis)</td></tr>
+<tr class="memdesc:a001a3fe6dd47c9b12ac17fa4bdb84fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Létrehoz egy dinamikusan foglalt kétdimenziós tömböt, aminek mérete megegyezik a pálya méretével, és mezői pontosan akkor igazak, ha a gráfban az ideális útvonal a rajt és a cél között átmegy az adott mezőn.  <a href="utvonalkereso_8c.html#a001a3fe6dd47c9b12ac17fa4bdb84fff">Részletek...</a><br /></td></tr>
+<tr class="separator:a001a3fe6dd47c9b12ac17fa4bdb84fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Részletes leírás</h2>
+<div class="textblock"><p>Ez a modul tartalmazza a legrövidebb útvonal megtalálásához szükséges függvényeket. </p>
+<p>Többek között olyan függvények, amik gráfot építenek, alkalmazzák a Dijkstra-algoritmust, és az eredményt egy kétdimenziós tömbbé alakítják, hogy könnyebben lehessen a képernyőre nyomtatni. A főbb függvények algoritmusairól az első fejezetben részletesen is írok. </p>
+</div><h2 class="groupheader">Függvények dokumentációja</h2>
+<a id="a0f92ed09a3a4f76441ae642012889f5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f92ed09a3a4f76441ae642012889f5f">&#9670;&nbsp;</a></span>csucs_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void csucs_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_csucs.html">Csucs</a> *&#160;</td>
+          <td class="paramname"><em>cs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_pozicio.html">Pozicio</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_szintek.html">Szintek</a>&#160;</td>
+          <td class="paramname"><em>meretek</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Kezdeti állapotba állít egy csúcsot. </p>
+<p>Pointereit lenullázza, megvizsgálja hogy a rajt vagy esetleg a cél-e. Ha a csúcs nem a rajt, akkor a távolságot egy olyan nagy értékre állítja, amilyen távolságok a gráfban biztos nem lesznek. (A Dijkstra-algoritmus szerint végtelenre kellene állítani, de ilyen lehetőség nincs C-ben) </p><dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cs</td><td>A beállítani kíívánt csúcs pointere </td></tr>
+    <tr><td class="paramname">p</td><td>A csúcs x és y koordinátája Pozíció struktúrában </td></tr>
+    <tr><td class="paramname">meretek</td><td>Betöltött szintek méretei és tömbje </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abff1dc1c7ae64f2a643ee1b95ce8314a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abff1dc1c7ae64f2a643ee1b95ce8314a">&#9670;&nbsp;</a></span>dijkstra()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void dijkstra </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_csucs.html">Csucs</a> **&#160;</td>
+          <td class="paramname"><em>lista</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>meret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Függvény, ami megvalósítja a Dijkstra algoritmust a rajt és cél között. </p>
+<p>(Azaz meghatározza a legrövidebb útat a két pont között.) </p><dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lista</td><td>Tömb, aminek minden elem a gráf egyik csúcsára mutat. </td></tr>
+    <tr><td class="paramname">meret</td><td>Csúcsok száma a gráfba, azaz a tömb mérete. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ada577e3b07f789de089e008b8ab93bce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada577e3b07f789de089e008b8ab93bce">&#9670;&nbsp;</a></span>graf_epit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void graf_epit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_csucs.html">Csucs</a> *&#160;</td>
+          <td class="paramname"><em>cs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_csucs.html">Csucs</a> ***&#160;</td>
+          <td class="paramname"><em>vizsgalt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_szintek.html">Szintek</a>&#160;</td>
+          <td class="paramname"><em>meretek</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>meret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rekurzív függvény, ami felépíti a gráf adatstruktúrát. </p>
+<p>Az elágazások lesznek a gráf csúcsai, az őket összekötő utcák pedig az élek. Egy futása egy adott csúcsot köt össze szomszédjaival, majd mindegyik szomszédjára meghívja magát. Közben szémolja, hogy összesen hány csúcsot talál. </p><dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cs</td><td>Annak a csúcsnak a pointere, amelyiket össze szeretnénk kötni a szomszédaival. </td></tr>
+    <tr><td class="paramname">vizsgalt</td><td>Kétdimenziós tömb (méretei megegyeznek a szint méreteivel), aminek minden mezője NULL, ha ahhoz a mezőhöz még nem csináltunk csúcsot. Amikor egy új csúcsot készítünk, ebben a tömbben a megfelelő mezőt a csúcs pointerére állítjuk. </td></tr>
+    <tr><td class="paramname">meretek</td><td>Betöltött szintek méretei és tömbje Az irányok sorrendje megegyezik enum Irany-nyal. </td></tr>
+    <tr><td class="paramname">meret</td><td>Ebbe a változóba menti a csúcsok számát. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af9aab43df11a3cecd98030db30650561"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9aab43df11a3cecd98030db30650561">&#9670;&nbsp;</a></span>graf_kilapit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void graf_kilapit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_csucs.html">Csucs</a> *&#160;</td>
+          <td class="paramname"><em>cs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_csucs.html">Csucs</a> ***&#160;</td>
+          <td class="paramname"><em>lista</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool **&#160;</td>
+          <td class="paramname"><em>vizsgalt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>hossz</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rekurzív függvény, ami csinál egy egydimneziós tömböt a gráfhoz, aminek minden eleme egy csúcsra mutat. </p>
+<p>Ez később segíteni fogja az eligazodást a gráfban. </p><dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cs</td><td>Kiinduló csúcs </td></tr>
+    <tr><td class="paramname">lista</td><td>Az épülő tömb </td></tr>
+    <tr><td class="paramname">n</td><td>Index, amit a rekurzív függvények mindegyike elér. Számlálja, hogy eddig hány csúcsot tettünk a tömbbe. </td></tr>
+    <tr><td class="paramname">vizsgalt</td><td>Kétdimenziós tömb, aminek minden mezője pontosan akkor igaz, ha az ahhoz a mezőhöz tartozó csúcs már vizsgálva volt. </td></tr>
+    <tr><td class="paramname">hossz</td><td>Csúcsok száma a gráfban </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a27ba205792e976a388b9d89c2e1998ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27ba205792e976a388b9d89c2e1998ae">&#9670;&nbsp;</a></span>irany_hataroz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="utvonalkereso_8h.html#a56df199b090c8161b176f04f084fd967">Irany</a> irany_hataroz </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_pozicio.html">Pozicio</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Függvény, ami meghatározza, hogy az adott x-y elmozdulással melyik irányba haladunk. </p>
+<p>A két koordináta közül pontosan egynek 0-nak, egynek pedig 1-nek vagy -1-nek kell lennie. Más x-y párra nem feltétlenül ad helyes eredményt. </p><dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Az x és y koordináta Pozíció struktúrában </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Visszatérési érték</dt><dd>Az irány enum-ja </dd></dl>
+
+</div>
+</div>
+<a id="a6f8ec901e0449f97f7a479433b8d9e40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f8ec901e0449f97f7a479433b8d9e40">&#9670;&nbsp;</a></span>kovi_utca()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void kovi_utca </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_pozicio.html">Pozicio</a> *&#160;</td>
+          <td class="paramname"><em>regi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_pozicio.html">Pozicio</a> *&#160;</td>
+          <td class="paramname"><em>uj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_szintek.html">Szintek</a>&#160;</td>
+          <td class="paramname"><em>meretek</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ha egy mezőnek két szomszédja utca, akkor ez a függvény meghatározza, hogy melyik irányba kell tovább menni, hogy az utcán maradjunk. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">regi</td><td>Az előző pozíció x és y koordinátája Pozíció struktúrában (erre nem szeretnénk visszamenni) </td></tr>
+    <tr><td class="paramname">uj</td><td>Meghíváskor a jelenlegi pozíció koordinátái, ami frissítve lesz a következő koordinátákra, úgy hogy az utca maradjon, de ne abba az irányba lépjünk, ahonnan jöttünk. </td></tr>
+    <tr><td class="paramname">meretek</td><td>Betöltött szintek méretei és tömbje Az irányok sorrendje megegyezik enum Irany-nyal. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac4f51539ca905e81cff11aa583814be8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4f51539ca905e81cff11aa583814be8">&#9670;&nbsp;</a></span>laposgraf_szabadit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void laposgraf_szabadit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_csucs.html">Csucs</a> ***&#160;</td>
+          <td class="paramname"><em>lista</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>meret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Felszabadítja a gráf minden csúcsát, majd a tömböt amiben tároltuk őket. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lista</td><td>A csúcsok tömbje </td></tr>
+    <tr><td class="paramname">meret</td><td>A tömb mérete </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3c62dd22fe189336833dd1deaa9ec7bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c62dd22fe189336833dd1deaa9ec7bc">&#9670;&nbsp;</a></span>legkozelebbi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int legkozelebbi </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_csucs.html">Csucs</a> **&#160;</td>
+          <td class="paramname"><em>lista</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>meret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Függvény, ami meghatározza azt a csúcsot, ami még nem volt vizsgálva, és a távolsága a legkisebb a kezdő csúcstól. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lista</td><td>A gráf csúcsait tartalmazó tömb. </td></tr>
+    <tr><td class="paramname">meret</td><td>A tömb mérete, azaz csúcsok száma </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Visszatérési érték</dt><dd>A megfelelő csúcs indexe a tömbben </dd></dl>
+
+</div>
+</div>
+<a id="af2b829eca75dda71d7237c5e801411d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2b829eca75dda71d7237c5e801411d2">&#9670;&nbsp;</a></span>legrovidebb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool** legrovidebb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_szintek.html">Szintek</a>&#160;</td>
+          <td class="paramname"><em>meretek</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>idealis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Megkeresi a legrövidebb útat az aktív szinten a rajt és a cél között (a fájl többi függvényének segítségével). </p>
+<p>Minden ilyen segédfüggvényhez elkészíti a szükséges segédtömböket, majd azokat felszabadítja. </p><dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meretek</td><td>Betöltött szintek méretei és tömbje </td></tr>
+    <tr><td class="paramname">idealis</td><td>Ebbe a változó menti a függvény az ideális útvonal hosszát Az irányok sorrendje megegyezik enum Irany-nyal. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Visszatérési érték</dt><dd>Egy olyan kétdimenziós tömb, aminek azon mezői igazak, amin átmegy az ideális útvonal, a többi hamis. </dd></dl>
+
+</div>
+</div>
+<a id="a001a3fe6dd47c9b12ac17fa4bdb84fff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a001a3fe6dd47c9b12ac17fa4bdb84fff">&#9670;&nbsp;</a></span>matrix_letrehoz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool** matrix_letrehoz </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_csucs.html">Csucs</a> **&#160;</td>
+          <td class="paramname"><em>lista</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>meret</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_szintek.html">Szintek</a>&#160;</td>
+          <td class="paramname"><em>meretek</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>idealis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Létrehoz egy dinamikusan foglalt kétdimenziós tömböt, aminek mérete megegyezik a pálya méretével, és mezői pontosan akkor igazak, ha a gráfban az ideális útvonal a rajt és a cél között átmegy az adott mezőn. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lista</td><td>A gráf csúcsait tartalmazó tömb. </td></tr>
+    <tr><td class="paramname">meret</td><td>A tömb mérete, azaz csúcsok száma </td></tr>
+    <tr><td class="paramname">meretek</td><td>Betöltött szintek méretei és tömbje </td></tr>
+    <tr><td class="paramname">idealis</td><td>Pointer, ahova a függvény elmenti az ideális útvonal hosszát </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Visszatérési érték</dt><dd>A dinamikusan foglalt kétdimenziós bool tömb, amit a hívónak fel kell szabadítania. </dd></dl>
+
+</div>
+</div>
+<a id="a54b5c474abf4fd43e458f97e35c2c653"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54b5c474abf4fd43e458f97e35c2c653">&#9670;&nbsp;</a></span>utak_szama()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int utak_szama </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_pozicio.html">Pozicio</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_szintek.html">Szintek</a>&#160;</td>
+          <td class="paramname"><em>meretek</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Függvény, ami meghatározza, hogy az adott koordináták által meghatározott mezőnek hány szomszédja utca. </p>
+<p>(Akkor fogunk egy mezőt csúcsnak tekinteni, ha legalább 3 utca szomszédja van). Mivel a rajtot és a célt is csúcsnak szeretnénk tekinteni (hiszen közöttük keressük a legrövidebb utat), náluk automatikusan 3-at fog visszaadni a függvény. </p><dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>A pont x és y koordinátja Pozíció struktúrában </td></tr>
+    <tr><td class="paramname">meretek</td><td>Betöltött szintek méretei és tömbje </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Visszatérési érték</dt><dd>Szomszédos utca mezők száma </dd></dl>
+
+</div>
+</div>
+<a id="a6acc6d646cb877d529437da5d3cd0af9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6acc6d646cb877d529437da5d3cd0af9">&#9670;&nbsp;</a></span>utca_teszt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool utca_teszt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_pozicio.html">Pozicio</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_szintek.html">Szintek</a>&#160;</td>
+          <td class="paramname"><em>meretek</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Függvény, ami megvizsálja hogy az adott koordináta a pályán belül van-e és a mező utca-e. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>A pont x és y koordinátja Pozíció struktúrában </td></tr>
+    <tr><td class="paramname">meretek</td><td>Betöltött szintek méretei és tömbje </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Visszatérési érték</dt><dd>Igaz, ha a koordináták által mutatott mező utca </dd></dl>
+
+</div>
+</div>
+<a id="af3ffec633cf6d8fe3f78c05b5693bca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3ffec633cf6d8fe3f78c05b5693bca3">&#9670;&nbsp;</a></span>van_nem_latogatott()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool van_nem_latogatott </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_csucs.html">Csucs</a> **&#160;</td>
+          <td class="paramname"><em>lista</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>meret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Függvény, ami meghatározza, hogy van-e még meg nem látogatott csúcs a gráfban. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lista</td><td>A gráf csúcsait tartalmazó tömb. </td></tr>
+    <tr><td class="paramname">meret</td><td>A tömb mérete, azaz csúcsok száma </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Visszatérési érték</dt><dd>Igaz, ha van még meg nem látogatott csúcs, egyébként hamis </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Készítette&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Útvonalválaszt-O: egyeb.c fájlreferencia</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Útvonalválaszt-O
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Keresés');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Függvények</a>  </div>
+  <div class="headertitle">
+<div class="title">egyeb.c fájlreferencia</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Egyéb függvényeket tartalmazó modul. Ide tartozik többek között a megkezdett játékok mentése és betöltése, a dinamikus tömbök foglalása és szabdítása, valamint a kilépő függvény.  
+<a href="#details">Részletek...</a></p>
+<div class="textblock"><code>#include &quot;egyeb.h&quot;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;debugmalloc.h&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Függvények</h2></td></tr>
+<tr class="memitem:ab38be97ab326a2111f287c633cd073df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="egyeb_8c.html#ab38be97ab326a2111f287c633cd073df">szam_beolvas</a> (int min, int max)</td></tr>
+<tr class="memdesc:ab38be97ab326a2111f287c633cd073df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bekér a felhasználótól egy számot.  <a href="egyeb_8c.html#ab38be97ab326a2111f287c633cd073df">Részletek...</a><br /></td></tr>
+<tr class="separator:ab38be97ab326a2111f287c633cd073df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c46f193b1aef6608f681b0662b7e0d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="egyeb_8c.html#a4c46f193b1aef6608f681b0662b7e0d8">jatek_ment</a> (int pont, <a class="el" href="struct_szintek.html">Szintek</a> meretek)</td></tr>
+<tr class="memdesc:a4c46f193b1aef6608f681b0662b7e0d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fájlba ment egy játékot.  <a href="egyeb_8c.html#a4c46f193b1aef6608f681b0662b7e0d8">Részletek...</a><br /></td></tr>
+<tr class="separator:a4c46f193b1aef6608f681b0662b7e0d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85c1c3e359f4cfa443c12bf603bdc2c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="egyeb_8c.html#a85c1c3e359f4cfa443c12bf603bdc2c6">jatek_betolt</a> (int *szint, int *pont)</td></tr>
+<tr class="memdesc:a85c1c3e359f4cfa443c12bf603bdc2c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Betölt egy korábban lementett játékot fájlból, majd törli a fájlból ezt a mentést.  <a href="egyeb_8c.html#a85c1c3e359f4cfa443c12bf603bdc2c6">Részletek...</a><br /></td></tr>
+<tr class="separator:a85c1c3e359f4cfa443c12bf603bdc2c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88494aeaece3cfc8008d4143ce376f5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="egyeb_8c.html#a88494aeaece3cfc8008d4143ce376f5f">segitseg</a> (void)</td></tr>
+<tr class="memdesc:a88494aeaece3cfc8008d4143ce376f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kiírja a segítséget a képernyőre.  <a href="egyeb_8c.html#a88494aeaece3cfc8008d4143ce376f5f">Részletek...</a><br /></td></tr>
+<tr class="separator:a88494aeaece3cfc8008d4143ce376f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada1c71e747453feaac872c514a80b04d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="szintek_8h.html#ad123fd42f5c77df753196853d1a13613">Cella</a> ***&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="egyeb_8c.html#ada1c71e747453feaac872c514a80b04d">cella_tomb_foglal</a> (<a class="el" href="struct_szintek.html">Szintek</a> meretek)</td></tr>
+<tr class="memdesc:ada1c71e747453feaac872c514a80b04d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Foglal egy dinamikus, háromdimenziós tömböt.  <a href="egyeb_8c.html#ada1c71e747453feaac872c514a80b04d">Részletek...</a><br /></td></tr>
+<tr class="separator:ada1c71e747453feaac872c514a80b04d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91725c40129996715ec3391c5feba66d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_csucs.html">Csucs</a> ***&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="egyeb_8c.html#a91725c40129996715ec3391c5feba66d">csucs_tomb_foglal</a> (<a class="el" href="struct_szintek.html">Szintek</a> meretek)</td></tr>
+<tr class="memdesc:a91725c40129996715ec3391c5feba66d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Foglal egy dinamikus, kétdimenziós tömböt, aminek minden eleme egy csúcsra mutató pointer lesz, ezeket mind NULL-ra állítja.  <a href="egyeb_8c.html#a91725c40129996715ec3391c5feba66d">Részletek...</a><br /></td></tr>
+<tr class="separator:a91725c40129996715ec3391c5feba66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad877baf77f6e032dfd9d421f3fd64b5d"><td class="memItemLeft" align="right" valign="top">bool **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="egyeb_8c.html#ad877baf77f6e032dfd9d421f3fd64b5d">bool_tomb_foglal</a> (<a class="el" href="struct_szintek.html">Szintek</a> meretek)</td></tr>
+<tr class="memdesc:ad877baf77f6e032dfd9d421f3fd64b5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Foglal egy dinamikus, kétdimenziós tömböt, aminek minden eleme egy boolean érték, ezeket mind hamisra állítja.  <a href="egyeb_8c.html#ad877baf77f6e032dfd9d421f3fd64b5d">Részletek...</a><br /></td></tr>
+<tr class="separator:ad877baf77f6e032dfd9d421f3fd64b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12f1c4785570d245cadaf8fe68c11ef7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="egyeb_8c.html#a12f1c4785570d245cadaf8fe68c11ef7">cella_tomb_szabadit</a> (<a class="el" href="struct_szintek.html">Szintek</a> meretek)</td></tr>
+<tr class="memdesc:a12f1c4785570d245cadaf8fe68c11ef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Felszabadítja a meretek struktúra dinamukis tömbjét.  <a href="egyeb_8c.html#a12f1c4785570d245cadaf8fe68c11ef7">Részletek...</a><br /></td></tr>
+<tr class="separator:a12f1c4785570d245cadaf8fe68c11ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c92051ae14c03e7016cb00a3d2998fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="egyeb_8c.html#a0c92051ae14c03e7016cb00a3d2998fb">kilep</a> (int code, char mes[100], <a class="el" href="struct_szintek.html">Szintek</a> meretek)</td></tr>
+<tr class="memdesc:a0c92051ae14c03e7016cb00a3d2998fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kilép a programból a megadott hibakóddal és hibaüzenettel, és azt az <a class="el" href="errorlog_8txt.html">errorlog.txt</a> fájlba is menti.  <a href="egyeb_8c.html#a0c92051ae14c03e7016cb00a3d2998fb">Részletek...</a><br /></td></tr>
+<tr class="separator:a0c92051ae14c03e7016cb00a3d2998fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f3db509b04b31b00f287fa6b8959fad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="egyeb_8c.html#a7f3db509b04b31b00f287fa6b8959fad">menu</a> (void)</td></tr>
+<tr class="memdesc:a7f3db509b04b31b00f287fa6b8959fad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kiírja a menü opcióit, majd bekéri a felhasználó választását a <a class="el" href="egyeb_8c.html#ab38be97ab326a2111f287c633cd073df" title="Bekér a felhasználótól egy számot.">szam_beolvas()</a> függvénnyel.  <a href="egyeb_8c.html#a7f3db509b04b31b00f287fa6b8959fad">Részletek...</a><br /></td></tr>
+<tr class="separator:a7f3db509b04b31b00f287fa6b8959fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Részletes leírás</h2>
+<div class="textblock"><p>Egyéb függvényeket tartalmazó modul. Ide tartozik többek között a megkezdett játékok mentése és betöltése, a dinamikus tömbök foglalása és szabdítása, valamint a kilépő függvény. </p>
+</div><h2 class="groupheader">Függvények dokumentációja</h2>
+<a id="ad877baf77f6e032dfd9d421f3fd64b5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad877baf77f6e032dfd9d421f3fd64b5d">&#9670;&nbsp;</a></span>bool_tomb_foglal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool** bool_tomb_foglal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_szintek.html">Szintek</a>&#160;</td>
+          <td class="paramname"><em>meretek</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Foglal egy dinamikus, kétdimenziós tömböt, aminek minden eleme egy boolean érték, ezeket mind hamisra állítja. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meretek</td><td>A <a class="el" href="struct_szintek.html" title="A szintek tömbjét és méreteit tartalmazó struktúra.">Szintek</a> méreteit és tömbjét tartalmazó struktúra </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Visszatérési érték</dt><dd>A foglalt tömb, amit a hívónak kell felszabadítania </dd></dl>
+
+</div>
+</div>
+<a id="ada1c71e747453feaac872c514a80b04d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada1c71e747453feaac872c514a80b04d">&#9670;&nbsp;</a></span>cella_tomb_foglal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="szintek_8h.html#ad123fd42f5c77df753196853d1a13613">Cella</a>*** cella_tomb_foglal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_szintek.html">Szintek</a>&#160;</td>
+          <td class="paramname"><em>meretek</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Foglal egy dinamikus, háromdimenziós tömböt. </p>
+<p>Ha nincs elég memória, kilép, az eddig foglalt területeket felszabadítva. </p><dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meretek</td><td>A <a class="el" href="struct_szintek.html" title="A szintek tömbjét és méreteit tartalmazó struktúra.">Szintek</a> méreteit és tömbjét tartalmazó struktúra </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Visszatérési érték</dt><dd>A dinamikus tömb, amit a meghívónak kell felszabadítania a <a class="el" href="egyeb_8c.html#a12f1c4785570d245cadaf8fe68c11ef7" title="Felszabadítja a meretek struktúra dinamukis tömbjét.">cella_tomb_szabadit()</a> függvénnyel. </dd></dl>
+
+</div>
+</div>
+<a id="a12f1c4785570d245cadaf8fe68c11ef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12f1c4785570d245cadaf8fe68c11ef7">&#9670;&nbsp;</a></span>cella_tomb_szabadit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cella_tomb_szabadit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_szintek.html">Szintek</a>&#160;</td>
+          <td class="paramname"><em>meretek</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Felszabadítja a meretek struktúra dinamukis tömbjét. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meretek</td><td>A <a class="el" href="struct_szintek.html" title="A szintek tömbjét és méreteit tartalmazó struktúra.">Szintek</a> méreteit és tömbjét tartalmazó struktúra </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a91725c40129996715ec3391c5feba66d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91725c40129996715ec3391c5feba66d">&#9670;&nbsp;</a></span>csucs_tomb_foglal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_csucs.html">Csucs</a>*** csucs_tomb_foglal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_szintek.html">Szintek</a>&#160;</td>
+          <td class="paramname"><em>meretek</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Foglal egy dinamikus, kétdimenziós tömböt, aminek minden eleme egy csúcsra mutató pointer lesz, ezeket mind NULL-ra állítja. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meretek</td><td>A <a class="el" href="struct_szintek.html" title="A szintek tömbjét és méreteit tartalmazó struktúra.">Szintek</a> méreteit és tömbjét tartalmazó struktúra </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Visszatérési érték</dt><dd>A foglalt tömb, amit a hívónak kell felszabadítania </dd></dl>
+
+</div>
+</div>
+<a id="a85c1c3e359f4cfa443c12bf603bdc2c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85c1c3e359f4cfa443c12bf603bdc2c6">&#9670;&nbsp;</a></span>jatek_betolt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jatek_betolt </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>szint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>pont</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Betölt egy korábban lementett játékot fájlból, majd törli a fájlból ezt a mentést. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">szint</td><td>Ebbe a változóba menti a teljesített szintek számát </td></tr>
+    <tr><td class="paramname">pont</td><td>Ebbe a változóba menti az eddigi pontszámot </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Visszatérési érték</dt><dd>0, ha sikeres a betöltés, 1 ha sikertelen (nem volt mentés, vagy érvénytelen) </dd></dl>
+
+</div>
+</div>
+<a id="a4c46f193b1aef6608f681b0662b7e0d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c46f193b1aef6608f681b0662b7e0d8">&#9670;&nbsp;</a></span>jatek_ment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jatek_ment </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pont</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_szintek.html">Szintek</a>&#160;</td>
+          <td class="paramname"><em>meretek</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fájlba ment egy játékot. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pont</td><td>Eddig szerzett pontok </td></tr>
+    <tr><td class="paramname">meretek</td><td>A <a class="el" href="struct_szintek.html" title="A szintek tömbjét és méreteit tartalmazó struktúra.">Szintek</a> méreteit és tömbjét tartalmazó struktúra </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0c92051ae14c03e7016cb00a3d2998fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c92051ae14c03e7016cb00a3d2998fb">&#9670;&nbsp;</a></span>kilep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void kilep </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>mes</em>[100], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_szintek.html">Szintek</a>&#160;</td>
+          <td class="paramname"><em>meretek</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kilép a programból a megadott hibakóddal és hibaüzenettel, és azt az <a class="el" href="errorlog_8txt.html">errorlog.txt</a> fájlba is menti. </p>
+<p>Felszabadítja a dinamikus tömböt, hacsak annak pointere nem NULL. Ha úgy akarjuk meghívni a függvényt, hogy a meretek.terkep már fel lett szabadítva, vagy még nincs lefoglalva, akkor a meretek paraméternek adjunk (<a class="el" href="struct_szintek.html" title="A szintek tömbjét és méreteit tartalmazó struktúra.">Szintek</a>) {NULL}-t! Mivel 2-es (memóriahiány) kóddal sokszor van meghívva a függvény, ennek a hibaüzenete itt van megadva, ilyenkor mes lehet NULL. Figyelem! Ez a függvény egyes IDE-kben sok figyelmeztetést okozhat. Ha ez a függvény valahol meg lett hívva, akkor ott biztosan véget ér a program futása, hiszen ennek a függvénynek exit() a vége. Így ezen függvény meghívása után fellépő figyelmeztetések nem okozhatnak problémát, hiszen oda már nem is fog eljutni a program. </p><dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>A hibakód </td></tr>
+    <tr><td class="paramname">mes</td><td>A hibaüzenet, maximum 100 karakter. </td></tr>
+    <tr><td class="paramname">meretek</td><td>A <a class="el" href="struct_szintek.html" title="A szintek tömbjét és méreteit tartalmazó struktúra.">Szintek</a> méreteit és tömbjét tartalmazó struktúra </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7f3db509b04b31b00f287fa6b8959fad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f3db509b04b31b00f287fa6b8959fad">&#9670;&nbsp;</a></span>menu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int menu </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kiírja a menü opcióit, majd bekéri a felhasználó választását a <a class="el" href="egyeb_8c.html#ab38be97ab326a2111f287c633cd073df" title="Bekér a felhasználótól egy számot.">szam_beolvas()</a> függvénnyel. </p>
+<dl class="section return"><dt>Visszatérési érték</dt><dd>a felhasználó választása az opciók közül </dd></dl>
+
+</div>
+</div>
+<a id="a88494aeaece3cfc8008d4143ce376f5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88494aeaece3cfc8008d4143ce376f5f">&#9670;&nbsp;</a></span>segitseg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void segitseg </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kiírja a segítséget a képernyőre. </p>
+
+</div>
+</div>
+<a id="ab38be97ab326a2111f287c633cd073df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab38be97ab326a2111f287c633cd073df">&#9670;&nbsp;</a></span>szam_beolvas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int szam_beolvas </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bekér a felhasználótól egy számot. </p>
+<p>Ha az nincs [min, max]-ban, akkor újra kér. Egyébként visszaadja a számot. Az InfoC-s tutorial alapján. </p><dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">min</td><td>Várt szám alsó korlátja </td></tr>
+    <tr><td class="paramname">max</td><td>Várt szám felső korlátja </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Visszatérési érték</dt><dd>Felhasználó választása, ami garantáltan [min, max]-ban van </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Készítette&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

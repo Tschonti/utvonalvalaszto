@@ -1,9 +1,9 @@
-**/cmake-build-debug
-**/cmake-build-wsl
-**/latex
-**/.idea
-/CMakeLists.txt
-/Doxyfile
+cmake-build-debug/
+cmake-build-wsl/
+latex/
+.idea/
+CMakeLists.txt
+Doxyfile
 
 # Prerequisites
 *.d

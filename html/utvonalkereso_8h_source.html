@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Útvonalválaszt-O: utvonalkereso.h Forrásfájl</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Útvonalválaszt-O
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Keresés');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">utvonalkereso.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="utvonalkereso_8h.html">Ugrás a fájl dokumentációjához.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="utvonalkereso_8h.html#a91fa28b7d0751a597e1a7a0b55d94265">    1</a></span>&#160;<span class="preprocessor">#ifndef NHF_UTVONALKERESO_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define NHF_UTVONALKERESO_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="szintek_8h.html">szintek.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_csucs.html">Csucs</a> <a class="code" href="struct_csucs.html">Csucs</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="struct_el.html">   12</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="struct_el.html#aeff3874dd89c9af86e536dc9f1b19295">   13</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_el.html#aeff3874dd89c9af86e536dc9f1b19295">suly</a>;       </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="struct_el.html#ae79945764eb723d928ca24fd008effd1">   14</a></span>&#160;    <a class="code" href="struct_csucs.html">Csucs</a> *<a class="code" href="struct_el.html#ae79945764eb723d928ca24fd008effd1">csucs</a>;   </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;} <a class="code" href="struct_el.html">El</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_csucs.html">   20</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_csucs.html">Csucs</a>{</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="struct_csucs.html#a6150e0515f7202e2fb518f7206ed97dc">   21</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_csucs.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;          </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="struct_csucs.html#a0a2f84ed7838f07779ae24c5a9086d33">   22</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_csucs.html#a0a2f84ed7838f07779ae24c5a9086d33">y</a>;          </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="struct_csucs.html#a85c354b558c366d95afa338513256e31">   23</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_csucs.html#a85c354b558c366d95afa338513256e31">tavolsag</a>;   </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="struct_csucs.html#a358ff2a08de4af979b539ceaca76015f">   26</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="struct_csucs.html#a358ff2a08de4af979b539ceaca76015f">vizsgalt</a>;  </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct_csucs.html#a18aca394f0a6afa4aec98bd3ca855604">   27</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_csucs.html#a18aca394f0a6afa4aec98bd3ca855604">elozo</a>;      </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_csucs.html#a8fd60518b49d8c020d065173d04ad440">   31</a></span>&#160;    <a class="code" href="struct_el.html">El</a> <a class="code" href="struct_csucs.html#a8fd60518b49d8c020d065173d04ad440">elek</a>[4];     </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="struct_csucs.html#ac2b4cc698a2fe674faa500e74692c44e">   32</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="struct_csucs.html#ac2b4cc698a2fe674faa500e74692c44e">cel</a>;       </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_csucs.html#a251b3313052b3529f88fd9cd8b627e0e">   33</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="struct_csucs.html#a251b3313052b3529f88fd9cd8b627e0e">rajt</a>;      </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="utvonalkereso_8h.html#a56df199b090c8161b176f04f084fd967">   39</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="utvonalkereso_8h.html#a56df199b090c8161b176f04f084fd967a1a2a6244809aa35d6bfd3d318868cada">   40</a></span>&#160;    <a class="code" href="utvonalkereso_8h.html#a56df199b090c8161b176f04f084fd967a1a2a6244809aa35d6bfd3d318868cada">fel</a> = 0,</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="utvonalkereso_8h.html#a56df199b090c8161b176f04f084fd967a73543cf8b04dbd83904af07e0df7df89">   41</a></span>&#160;    <a class="code" href="utvonalkereso_8h.html#a56df199b090c8161b176f04f084fd967a73543cf8b04dbd83904af07e0df7df89">jobb</a> = 1,</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="utvonalkereso_8h.html#a56df199b090c8161b176f04f084fd967acc44685fea9bbc7fdf4cf5656aa218e2">   42</a></span>&#160;    <a class="code" href="utvonalkereso_8h.html#a56df199b090c8161b176f04f084fd967acc44685fea9bbc7fdf4cf5656aa218e2">le</a> = 2,</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="utvonalkereso_8h.html#a56df199b090c8161b176f04f084fd967a59c64ecfd729077044dbda08339c2369">   43</a></span>&#160;    <a class="code" href="utvonalkereso_8h.html#a56df199b090c8161b176f04f084fd967a59c64ecfd729077044dbda08339c2369">bal</a> = 3,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="utvonalkereso_8h.html#a56df199b090c8161b176f04f084fd967a74d343d1def6234b5b864f0eaa4d58b4">egyikse</a> = 4</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="utvonalkereso_8h.html#a56df199b090c8161b176f04f084fd967a74d343d1def6234b5b864f0eaa4d58b4">   45</a></span>&#160;} <a class="code" href="utvonalkereso_8h.html#a56df199b090c8161b176f04f084fd967">Irany</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">bool</span> **<a class="code" href="utvonalkereso_8c.html#af2b829eca75dda71d7237c5e801411d2">legrovidebb</a>(<a class="code" href="struct_szintek.html">Szintek</a> meretek, <span class="keywordtype">int</span> *idealis);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="utvonalkereso_8c.html#ada577e3b07f789de089e008b8ab93bce">graf_epit</a>(<a class="code" href="struct_csucs.html">Csucs</a>* uj, <a class="code" href="struct_csucs.html">Csucs</a> ***vizsgalt, <a class="code" href="struct_szintek.html">Szintek</a> meretek, <span class="keywordtype">int</span> *meret);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="utvonalkereso_8c.html#af9aab43df11a3cecd98030db30650561">graf_kilapit</a>(<a class="code" href="struct_csucs.html">Csucs</a> *cs, <a class="code" href="struct_csucs.html">Csucs</a> ***lista, <span class="keywordtype">int</span> *n, <span class="keywordtype">bool</span> **vizsgalt, <span class="keywordtype">int</span> hossz);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="utvonalkereso_8c.html#abff1dc1c7ae64f2a643ee1b95ce8314a">dijkstra</a>(<a class="code" href="struct_csucs.html">Csucs</a> **lista, <span class="keywordtype">int</span> meret);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="utvonalkereso_8c.html#ac4f51539ca905e81cff11aa583814be8">laposgraf_szabadit</a>(<a class="code" href="struct_csucs.html">Csucs</a> ***lista, <span class="keywordtype">int</span> meret);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="utvonalkereso_8c.html#a6acc6d646cb877d529437da5d3cd0af9">utca_teszt</a>(<a class="code" href="struct_pozicio.html">Pozicio</a> p, <a class="code" href="struct_szintek.html">Szintek</a> meretek);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="utvonalkereso_8c.html#a54b5c474abf4fd43e458f97e35c2c653">utak_szama</a>(<a class="code" href="struct_pozicio.html">Pozicio</a> p, <a class="code" href="struct_szintek.html">Szintek</a> meretek);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="utvonalkereso_8c.html#a6f8ec901e0449f97f7a479433b8d9e40">kovi_utca</a>(<a class="code" href="struct_pozicio.html">Pozicio</a> *regi, <a class="code" href="struct_pozicio.html">Pozicio</a> *uj, <a class="code" href="struct_szintek.html">Szintek</a> meretek);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">static</span> <a class="code" href="utvonalkereso_8h.html#a56df199b090c8161b176f04f084fd967">Irany</a> <a class="code" href="utvonalkereso_8c.html#a27ba205792e976a388b9d89c2e1998ae">irany_hataroz</a>(<a class="code" href="struct_pozicio.html">Pozicio</a> p);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="utvonalkereso_8c.html#a0f92ed09a3a4f76441ae642012889f5f">csucs_init</a>(<a class="code" href="struct_csucs.html">Csucs</a> *cs, <a class="code" href="struct_pozicio.html">Pozicio</a> p, <a class="code" href="struct_szintek.html">Szintek</a> meretek);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="utvonalkereso_8c.html#af3ffec633cf6d8fe3f78c05b5693bca3">van_nem_latogatott</a>(<a class="code" href="struct_csucs.html">Csucs</a> **lista, <span class="keywordtype">int</span> meret);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="utvonalkereso_8c.html#a3c62dd22fe189336833dd1deaa9ec7bc">legkozelebbi</a>(<a class="code" href="struct_csucs.html">Csucs</a> **lista, <span class="keywordtype">int</span> meret);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> **<a class="code" href="utvonalkereso_8c.html#a001a3fe6dd47c9b12ac17fa4bdb84fff">matrix_letrehoz</a>(<a class="code" href="struct_csucs.html">Csucs</a> **lista, <span class="keywordtype">int</span> meret, <a class="code" href="struct_szintek.html">Szintek</a> meretek, <span class="keywordtype">int</span> *idealis);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="autvonalkereso_8c_html_a001a3fe6dd47c9b12ac17fa4bdb84fff"><div class="ttname"><a href="utvonalkereso_8c.html#a001a3fe6dd47c9b12ac17fa4bdb84fff">matrix_letrehoz</a></div><div class="ttdeci">static bool ** matrix_letrehoz(Csucs **lista, int meret, Szintek meretek, int *idealis)</div><div class="ttdoc">Létrehoz egy dinamikusan foglalt kétdimenziós tömböt, aminek mérete megegyezik a pálya méretével,...</div><div class="ttdef"><b>Definition:</b> utvonalkereso.c:324</div></div>
+<div class="ttc" id="autvonalkereso_8c_html_a3c62dd22fe189336833dd1deaa9ec7bc"><div class="ttname"><a href="utvonalkereso_8c.html#a3c62dd22fe189336833dd1deaa9ec7bc">legkozelebbi</a></div><div class="ttdeci">static int legkozelebbi(Csucs **lista, int meret)</div><div class="ttdoc">Függvény, ami meghatározza azt a csúcsot, ami még nem volt vizsgálva, és a távolsága a legkisebb a ke...</div><div class="ttdef"><b>Definition:</b> utvonalkereso.c:303</div></div>
+<div class="ttc" id="astruct_csucs_html_a18aca394f0a6afa4aec98bd3ca855604"><div class="ttname"><a href="struct_csucs.html#a18aca394f0a6afa4aec98bd3ca855604">Csucs::elozo</a></div><div class="ttdeci">int elozo</div><div class="ttdoc">Az elek[elozo] adja meg azt az élt, amivel eljuthatunk az előző csúcshoz, ha a legrövidebb úton akaru...</div><div class="ttdef"><b>Definition:</b> utvonalkereso.h:27</div></div>
+<div class="ttc" id="astruct_el_html_aeff3874dd89c9af86e536dc9f1b19295"><div class="ttname"><a href="struct_el.html#aeff3874dd89c9af86e536dc9f1b19295">El::suly</a></div><div class="ttdeci">int suly</div><div class="ttdoc">Az él súlya, azaz a két csúcs távolsága (mezőkben)</div><div class="ttdef"><b>Definition:</b> utvonalkereso.h:13</div></div>
+<div class="ttc" id="autvonalkereso_8c_html_a0f92ed09a3a4f76441ae642012889f5f"><div class="ttname"><a href="utvonalkereso_8c.html#a0f92ed09a3a4f76441ae642012889f5f">csucs_init</a></div><div class="ttdeci">static void csucs_init(Csucs *cs, Pozicio p, Szintek meretek)</div><div class="ttdoc">Kezdeti állapotba állít egy csúcsot.</div><div class="ttdef"><b>Definition:</b> utvonalkereso.c:269</div></div>
+<div class="ttc" id="autvonalkereso_8c_html_af2b829eca75dda71d7237c5e801411d2"><div class="ttname"><a href="utvonalkereso_8c.html#af2b829eca75dda71d7237c5e801411d2">legrovidebb</a></div><div class="ttdeci">bool ** legrovidebb(Szintek meretek, int *idealis)</div><div class="ttdoc">Megkeresi a legrövidebb útat az aktív szinten a rajt és a cél között (a fájl többi függvényének segít...</div><div class="ttdef"><b>Definition:</b> utvonalkereso.c:24</div></div>
+<div class="ttc" id="autvonalkereso_8c_html_ada577e3b07f789de089e008b8ab93bce"><div class="ttname"><a href="utvonalkereso_8c.html#ada577e3b07f789de089e008b8ab93bce">graf_epit</a></div><div class="ttdeci">static void graf_epit(Csucs *cs, Csucs ***vizsgalt, Szintek meretek, int *meret)</div><div class="ttdoc">Rekurzív függvény, ami felépíti a gráf adatstruktúrát.</div><div class="ttdef"><b>Definition:</b> utvonalkereso.c:64</div></div>
+<div class="ttc" id="autvonalkereso_8c_html_a6f8ec901e0449f97f7a479433b8d9e40"><div class="ttname"><a href="utvonalkereso_8c.html#a6f8ec901e0449f97f7a479433b8d9e40">kovi_utca</a></div><div class="ttdeci">static void kovi_utca(Pozicio *regi, Pozicio *uj, Szintek meretek)</div><div class="ttdoc">Ha egy mezőnek két szomszédja utca, akkor ez a függvény meghatározza, hogy melyik irányba kell tovább...</div><div class="ttdef"><b>Definition:</b> utvonalkereso.c:221</div></div>
+<div class="ttc" id="astruct_pozicio_html"><div class="ttname"><a href="struct_pozicio.html">Pozicio</a></div><div class="ttdoc">Egy jelenlegi pozíció a cellák mátrixában.</div><div class="ttdef"><b>Definition:</b> szintek.h:18</div></div>
+<div class="ttc" id="autvonalkereso_8h_html_a56df199b090c8161b176f04f084fd967a59c64ecfd729077044dbda08339c2369"><div class="ttname"><a href="utvonalkereso_8h.html#a56df199b090c8161b176f04f084fd967a59c64ecfd729077044dbda08339c2369">bal</a></div><div class="ttdeci">@ bal</div><div class="ttdef"><b>Definition:</b> utvonalkereso.h:43</div></div>
+<div class="ttc" id="autvonalkereso_8c_html_a6acc6d646cb877d529437da5d3cd0af9"><div class="ttname"><a href="utvonalkereso_8c.html#a6acc6d646cb877d529437da5d3cd0af9">utca_teszt</a></div><div class="ttdeci">static bool utca_teszt(Pozicio p, Szintek meretek)</div><div class="ttdoc">Függvény, ami megvizsálja hogy az adott koordináta a pályán belül van-e és a mező utca-e.</div><div class="ttdef"><b>Definition:</b> utvonalkereso.c:185</div></div>
+<div class="ttc" id="aszintek_8h_html"><div class="ttname"><a href="szintek_8h.html">szintek.h</a></div></div>
+<div class="ttc" id="astruct_csucs_html"><div class="ttname"><a href="struct_csucs.html">Csucs</a></div><div class="ttdoc">Egy csúcsot reprezentáló struktúra.</div><div class="ttdef"><b>Definition:</b> utvonalkereso.h:20</div></div>
+<div class="ttc" id="astruct_csucs_html_a358ff2a08de4af979b539ceaca76015f"><div class="ttname"><a href="struct_csucs.html#a358ff2a08de4af979b539ceaca76015f">Csucs::vizsgalt</a></div><div class="ttdeci">bool vizsgalt</div><div class="ttdoc">Vizsgáltuk-e már a csúcsot a Dijkstra-algoritmusban?</div><div class="ttdef"><b>Definition:</b> utvonalkereso.h:26</div></div>
+<div class="ttc" id="autvonalkereso_8h_html_a56df199b090c8161b176f04f084fd967a1a2a6244809aa35d6bfd3d318868cada"><div class="ttname"><a href="utvonalkereso_8h.html#a56df199b090c8161b176f04f084fd967a1a2a6244809aa35d6bfd3d318868cada">fel</a></div><div class="ttdeci">@ fel</div><div class="ttdef"><b>Definition:</b> utvonalkereso.h:40</div></div>
+<div class="ttc" id="autvonalkereso_8c_html_ac4f51539ca905e81cff11aa583814be8"><div class="ttname"><a href="utvonalkereso_8c.html#ac4f51539ca905e81cff11aa583814be8">laposgraf_szabadit</a></div><div class="ttdeci">static void laposgraf_szabadit(Csucs ***lista, int meret)</div><div class="ttdoc">Felszabadítja a gráf minden csúcsát, majd a tömböt amiben tároltuk őket.</div><div class="ttdef"><b>Definition:</b> utvonalkereso.c:172</div></div>
+<div class="ttc" id="astruct_csucs_html_a6150e0515f7202e2fb518f7206ed97dc"><div class="ttname"><a href="struct_csucs.html#a6150e0515f7202e2fb518f7206ed97dc">Csucs::x</a></div><div class="ttdeci">int x</div><div class="ttdoc">A csúcs x koordinátája.</div><div class="ttdef"><b>Definition:</b> utvonalkereso.h:21</div></div>
+<div class="ttc" id="astruct_szintek_html"><div class="ttname"><a href="struct_szintek.html">Szintek</a></div><div class="ttdoc">A szintek tömbjét és méreteit tartalmazó struktúra.</div><div class="ttdef"><b>Definition:</b> szintek.h:32</div></div>
+<div class="ttc" id="astruct_csucs_html_a0a2f84ed7838f07779ae24c5a9086d33"><div class="ttname"><a href="struct_csucs.html#a0a2f84ed7838f07779ae24c5a9086d33">Csucs::y</a></div><div class="ttdeci">int y</div><div class="ttdoc">A csúcs y koordinátája.</div><div class="ttdef"><b>Definition:</b> utvonalkereso.h:22</div></div>
+<div class="ttc" id="autvonalkereso_8h_html_a56df199b090c8161b176f04f084fd967acc44685fea9bbc7fdf4cf5656aa218e2"><div class="ttname"><a href="utvonalkereso_8h.html#a56df199b090c8161b176f04f084fd967acc44685fea9bbc7fdf4cf5656aa218e2">le</a></div><div class="ttdeci">@ le</div><div class="ttdef"><b>Definition:</b> utvonalkereso.h:42</div></div>
+<div class="ttc" id="autvonalkereso_8c_html_abff1dc1c7ae64f2a643ee1b95ce8314a"><div class="ttname"><a href="utvonalkereso_8c.html#abff1dc1c7ae64f2a643ee1b95ce8314a">dijkstra</a></div><div class="ttdeci">static void dijkstra(Csucs **lista, int meret)</div><div class="ttdoc">Függvény, ami megvalósítja a Dijkstra algoritmust a rajt és cél között.</div><div class="ttdef"><b>Definition:</b> utvonalkereso.c:138</div></div>
+<div class="ttc" id="autvonalkereso_8h_html_a56df199b090c8161b176f04f084fd967a73543cf8b04dbd83904af07e0df7df89"><div class="ttname"><a href="utvonalkereso_8h.html#a56df199b090c8161b176f04f084fd967a73543cf8b04dbd83904af07e0df7df89">jobb</a></div><div class="ttdeci">@ jobb</div><div class="ttdef"><b>Definition:</b> utvonalkereso.h:41</div></div>
+<div class="ttc" id="astruct_csucs_html_a8fd60518b49d8c020d065173d04ad440"><div class="ttname"><a href="struct_csucs.html#a8fd60518b49d8c020d065173d04ad440">Csucs::elek</a></div><div class="ttdeci">El elek[4]</div><div class="ttdoc">A csúcsból kiinduló élek tömbje.</div><div class="ttdef"><b>Definition:</b> utvonalkereso.h:31</div></div>
+<div class="ttc" id="astruct_el_html_ae79945764eb723d928ca24fd008effd1"><div class="ttname"><a href="struct_el.html#ae79945764eb723d928ca24fd008effd1">El::csucs</a></div><div class="ttdeci">Csucs * csucs</div><div class="ttdoc">Pointer a csúcsra, ahova az él mutat.</div><div class="ttdef"><b>Definition:</b> utvonalkereso.h:14</div></div>
+<div class="ttc" id="autvonalkereso_8h_html_a56df199b090c8161b176f04f084fd967"><div class="ttname"><a href="utvonalkereso_8h.html#a56df199b090c8161b176f04f084fd967">Irany</a></div><div class="ttdeci">Irany</div><div class="ttdoc">A négy lehetséges irány a játékban.</div><div class="ttdef"><b>Definition:</b> utvonalkereso.h:39</div></div>
+<div class="ttc" id="autvonalkereso_8h_html_a56df199b090c8161b176f04f084fd967a74d343d1def6234b5b864f0eaa4d58b4"><div class="ttname"><a href="utvonalkereso_8h.html#a56df199b090c8161b176f04f084fd967a74d343d1def6234b5b864f0eaa4d58b4">egyikse</a></div><div class="ttdeci">@ egyikse</div><div class="ttdef"><b>Definition:</b> utvonalkereso.h:44</div></div>
+<div class="ttc" id="astruct_el_html"><div class="ttname"><a href="struct_el.html">El</a></div><div class="ttdoc">Egy csúcs egy élét reprezentáló struktúra.</div><div class="ttdef"><b>Definition:</b> utvonalkereso.h:12</div></div>
+<div class="ttc" id="autvonalkereso_8c_html_af3ffec633cf6d8fe3f78c05b5693bca3"><div class="ttname"><a href="utvonalkereso_8c.html#af3ffec633cf6d8fe3f78c05b5693bca3">van_nem_latogatott</a></div><div class="ttdeci">static bool van_nem_latogatott(Csucs **lista, int meret)</div><div class="ttdoc">Függvény, ami meghatározza, hogy van-e még meg nem látogatott csúcs a gráfban.</div><div class="ttdef"><b>Definition:</b> utvonalkereso.c:288</div></div>
+<div class="ttc" id="autvonalkereso_8c_html_a54b5c474abf4fd43e458f97e35c2c653"><div class="ttname"><a href="utvonalkereso_8c.html#a54b5c474abf4fd43e458f97e35c2c653">utak_szama</a></div><div class="ttdeci">static int utak_szama(Pozicio p, Szintek meretek)</div><div class="ttdoc">Függvény, ami meghatározza, hogy az adott koordináták által meghatározott mezőnek hány szomszédja utc...</div><div class="ttdef"><b>Definition:</b> utvonalkereso.c:197</div></div>
+<div class="ttc" id="astruct_csucs_html_ac2b4cc698a2fe674faa500e74692c44e"><div class="ttname"><a href="struct_csucs.html#ac2b4cc698a2fe674faa500e74692c44e">Csucs::cel</a></div><div class="ttdeci">bool cel</div><div class="ttdoc">Ez a csúcs a cél-e?</div><div class="ttdef"><b>Definition:</b> utvonalkereso.h:32</div></div>
+<div class="ttc" id="autvonalkereso_8c_html_af9aab43df11a3cecd98030db30650561"><div class="ttname"><a href="utvonalkereso_8c.html#af9aab43df11a3cecd98030db30650561">graf_kilapit</a></div><div class="ttdeci">static void graf_kilapit(Csucs *cs, Csucs ***lista, int *n, bool **vizsgalt, int hossz)</div><div class="ttdoc">Rekurzív függvény, ami csinál egy egydimneziós tömböt a gráfhoz, aminek minden eleme egy csúcsra muta...</div><div class="ttdef"><b>Definition:</b> utvonalkereso.c:120</div></div>
+<div class="ttc" id="astruct_csucs_html_a251b3313052b3529f88fd9cd8b627e0e"><div class="ttname"><a href="struct_csucs.html#a251b3313052b3529f88fd9cd8b627e0e">Csucs::rajt</a></div><div class="ttdeci">bool rajt</div><div class="ttdoc">Ez a csúcs a rajt-e?</div><div class="ttdef"><b>Definition:</b> utvonalkereso.h:33</div></div>
+<div class="ttc" id="autvonalkereso_8c_html_a27ba205792e976a388b9d89c2e1998ae"><div class="ttname"><a href="utvonalkereso_8c.html#a27ba205792e976a388b9d89c2e1998ae">irany_hataroz</a></div><div class="ttdeci">static Irany irany_hataroz(Pozicio p)</div><div class="ttdoc">Függvény, ami meghatározza, hogy az adott x-y elmozdulással melyik irányba haladunk.</div><div class="ttdef"><b>Definition:</b> utvonalkereso.c:250</div></div>
+<div class="ttc" id="astruct_csucs_html_a85c354b558c366d95afa338513256e31"><div class="ttname"><a href="struct_csucs.html#a85c354b558c366d95afa338513256e31">Csucs::tavolsag</a></div><div class="ttdeci">int tavolsag</div><div class="ttdoc">A csúcs távolsága a kezdő csúcstól.</div><div class="ttdef"><b>Definition:</b> utvonalkereso.h:23</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Készítette&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Útvonalválaszt-O: toplista.c fájlreferencia</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Útvonalválaszt-O
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Keresés');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Függvények</a>  </div>
+  <div class="headertitle">
+<div class="title">toplista.c fájlreferencia</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>A toplista betöltését és szerkesztését leíró függvényeket tartlmazó modul.  
+<a href="#details">Részletek...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="toplista_8h_source.html">toplista.h</a>&quot;</code><br />
+<code>#include &quot;egyeb.h&quot;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;debugmalloc.h&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Függvények</h2></td></tr>
+<tr class="memitem:aa6ed7041723cd5a21a87b55993ce3557"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="toplista_8c.html#aa6ed7041723cd5a21a87b55993ce3557">toplista_betolt</a> (<a class="el" href="struct_toplista.html">Toplista</a> *tl, <a class="el" href="struct_szintek.html">Szintek</a> meretek)</td></tr>
+<tr class="memdesc:aa6ed7041723cd5a21a87b55993ce3557"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fájlból betölti a lementett toplistát.  <a href="toplista_8c.html#aa6ed7041723cd5a21a87b55993ce3557">Részletek...</a><br /></td></tr>
+<tr class="separator:aa6ed7041723cd5a21a87b55993ce3557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57ecf49628d13ea36e01bea9c0161779"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="toplista_8c.html#a57ecf49628d13ea36e01bea9c0161779">uj_eredmeny</a> (<a class="el" href="struct_toplista.html">Toplista</a> *tl, int pont, <a class="el" href="struct_szintek.html">Szintek</a> meretek)</td></tr>
+<tr class="memdesc:a57ecf49628d13ea36e01bea9c0161779"><td class="mdescLeft">&#160;</td><td class="mdescRight">Megállapítja egy új eredményről, hogy az felkerül-e a toplistára.  <a href="toplista_8c.html#a57ecf49628d13ea36e01bea9c0161779">Részletek...</a><br /></td></tr>
+<tr class="separator:a57ecf49628d13ea36e01bea9c0161779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9af411a5d222f51b5dde88a584c3f4b2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="toplista_8c.html#a9af411a5d222f51b5dde88a584c3f4b2">eredmeny_felvesz</a> (<a class="el" href="struct_toplista.html">Toplista</a> *tl, <a class="el" href="struct_eredmeny.html">Eredmeny</a> new, <a class="el" href="struct_szintek.html">Szintek</a> meretek)</td></tr>
+<tr class="memdesc:a9af411a5d222f51b5dde88a584c3f4b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Egy eredményt berak a dinamikus tömbbe.  <a href="toplista_8c.html#a9af411a5d222f51b5dde88a584c3f4b2">Részletek...</a><br /></td></tr>
+<tr class="separator:a9af411a5d222f51b5dde88a584c3f4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdfb1db09493f19b67795d53b23787ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="toplista_8c.html#afdfb1db09493f19b67795d53b23787ed">toplista_nyomtat</a> (<a class="el" href="struct_toplista.html">Toplista</a> tl)</td></tr>
+<tr class="memdesc:afdfb1db09493f19b67795d53b23787ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kinyomtatja a képernyőre az aktuális toplistát, majd felszabadítja a dinamikus tömböt.  <a href="toplista_8c.html#afdfb1db09493f19b67795d53b23787ed">Részletek...</a><br /></td></tr>
+<tr class="separator:afdfb1db09493f19b67795d53b23787ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a446c729db3104eb6b29e8de51aff0de9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="toplista_8c.html#a446c729db3104eb6b29e8de51aff0de9">toplista_fajlba</a> (<a class="el" href="struct_toplista.html">Toplista</a> tl)</td></tr>
+<tr class="memdesc:a446c729db3104eb6b29e8de51aff0de9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fájlba írja az toplistát.  <a href="toplista_8c.html#a446c729db3104eb6b29e8de51aff0de9">Részletek...</a><br /></td></tr>
+<tr class="separator:a446c729db3104eb6b29e8de51aff0de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Részletes leírás</h2>
+<div class="textblock"><p>A toplista betöltését és szerkesztését leíró függvényeket tartlmazó modul. </p>
+</div><h2 class="groupheader">Függvények dokumentációja</h2>
+<a id="a9af411a5d222f51b5dde88a584c3f4b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9af411a5d222f51b5dde88a584c3f4b2">&#9670;&nbsp;</a></span>eredmeny_felvesz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void eredmeny_felvesz </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_toplista.html">Toplista</a> *&#160;</td>
+          <td class="paramname"><em>tl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_eredmeny.html">Eredmeny</a>&#160;</td>
+          <td class="paramname"><em>new</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_szintek.html">Szintek</a>&#160;</td>
+          <td class="paramname"><em>meretek</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Egy eredményt berak a dinamikus tömbbe. </p>
+<p>Ha szükséges, meg is nyújtja a tömböt (egyébként az utolsó eredményt eldobja). Habár a dinamius tömb megnyújtása hosszú művelet is lehetne, itt maximum 9 elemű tömböt kell másolni, ami nem probléma a mai gépeknek. </p><dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tl</td><td>Dinamikus tömb </td></tr>
+    <tr><td class="paramname">new</td><td>Az eredmény, amit berak a tömbbe </td></tr>
+    <tr><td class="paramname">meretek</td><td>A <a class="el" href="struct_szintek.html" title="A szintek tömbjét és méreteit tartalmazó struktúra.">Szintek</a> méreteit és tömbjét tartalmazó struktúra </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa6ed7041723cd5a21a87b55993ce3557"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6ed7041723cd5a21a87b55993ce3557">&#9670;&nbsp;</a></span>toplista_betolt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void toplista_betolt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_toplista.html">Toplista</a> *&#160;</td>
+          <td class="paramname"><em>tl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_szintek.html">Szintek</a>&#160;</td>
+          <td class="paramname"><em>meretek</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fájlból betölti a lementett toplistát. </p>
+<p>Ha nem találja, akkor létrehozza. Ha nem tudja megynitni a fájlt, vagy az érvénytelen, kilép a <a class="el" href="egyeb_8c.html#a0c92051ae14c03e7016cb00a3d2998fb" title="Kilép a programból a megadott hibakóddal és hibaüzenettel, és azt az errorlog.txt fájlba is menti.">kilep()</a> függvénnyel. </p><dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tl</td><td>Dinamikus tömb, amibe betölti az eredményeket. </td></tr>
+    <tr><td class="paramname">meretek</td><td>A <a class="el" href="struct_szintek.html" title="A szintek tömbjét és méreteit tartalmazó struktúra.">Szintek</a> méreteit és tömbjét tartalmazó struktúra </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a446c729db3104eb6b29e8de51aff0de9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a446c729db3104eb6b29e8de51aff0de9">&#9670;&nbsp;</a></span>toplista_fajlba()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void toplista_fajlba </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_toplista.html">Toplista</a>&#160;</td>
+          <td class="paramname"><em>tl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fájlba írja az toplistát. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tl</td><td>A toplista dinamikus tömbje </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afdfb1db09493f19b67795d53b23787ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdfb1db09493f19b67795d53b23787ed">&#9670;&nbsp;</a></span>toplista_nyomtat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void toplista_nyomtat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_toplista.html">Toplista</a>&#160;</td>
+          <td class="paramname"><em>tl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kinyomtatja a képernyőre az aktuális toplistát, majd felszabadítja a dinamikus tömböt. </p>
+<p>A toplista nyomtatása után már sosincs szükségünk a toplistára, ezért innen is fel lehet szabadítani. </p><dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tl</td><td>A toplista dinamikus tömbje </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a57ecf49628d13ea36e01bea9c0161779"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57ecf49628d13ea36e01bea9c0161779">&#9670;&nbsp;</a></span>uj_eredmeny()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void uj_eredmeny </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_toplista.html">Toplista</a> *&#160;</td>
+          <td class="paramname"><em>tl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pont</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_szintek.html">Szintek</a>&#160;</td>
+          <td class="paramname"><em>meretek</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Megállapítja egy új eredményről, hogy az felkerül-e a toplistára. </p>
+<p>Ha igen, bekéri a felhasználótól a nevét, és meghívja az <a class="el" href="toplista_8c.html#a9af411a5d222f51b5dde88a584c3f4b2" title="Egy eredményt berak a dinamikus tömbbe.">eredmeny_felvesz()</a> függvényt, majd az új toplistát fájlba írja a <a class="el" href="toplista_8c.html#a446c729db3104eb6b29e8de51aff0de9" title="Fájlba írja az toplistát.">toplista_fajlba()</a> függvénnyel. </p><dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tl</td><td>Dinamikus tömb </td></tr>
+    <tr><td class="paramname">pont</td><td>Az új eredmény pontszáma </td></tr>
+    <tr><td class="paramname">meretek</td><td>A <a class="el" href="struct_szintek.html" title="A szintek tömbjét és méreteit tartalmazó struktúra.">Szintek</a> méreteit és tömbjét tartalmazó struktúra </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Készítette&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>
