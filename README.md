@@ -12,5 +12,5 @@ egyszerűsíti le és gyakoroltatja, hiszen tájfutóként is az egyik legfontos
  útvonalat válaszd.
  
  A pontos játékszabályokért olvasd el a felhasználói dokumentációt! (nhf_felh_dokumentacio.pdf)
- Ha érdekel, hogyan készült a játék, akkor pedig ajánlom a [programozói dokumetációt](https://tschonti.github.io/utvonalvalaszto/)!
+ Ha érdekel hogyan készült a játék, akkor pedig ajánlom a [programozói dokumetációt](https://tschonti.github.io/utvonalvalaszto/)!
  
