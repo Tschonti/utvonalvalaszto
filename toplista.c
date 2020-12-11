@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "debugmalloc.h"
 
 /*! @file toplista.c
  * \brief A toplista betöltését és szerkesztését leíró függvényeket tartlmazó modul.

@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include "utvonalkereso.h"
 #include "egyeb.h"
-#include "debugmalloc.h"
 
 /*! @file utvonalkereso.c
  * \brief Ez a modul tartalmazza a legrövidebb útvonal megtalálásához szükséges függvényeket.

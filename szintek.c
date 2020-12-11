@@ -6,7 +6,6 @@
 #include <time.h>
 #include <math.h>
 #include "econio.h"
-#include "debugmalloc.h"
 
 /*! @file szintek.c
  * \brief A szintek betöltését és kezelését leíró függvényeket tartlmazó modul.

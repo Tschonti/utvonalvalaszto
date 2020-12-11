@@ -5,7 +5,6 @@
 #include "szintek.h"
 #include "egyeb.h"
 #include "toplista.h"
-#include "debugmalloc.h"
 
 #ifdef _WIN32
 #include <windows.h>

@@ -2,7 +2,6 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "debugmalloc.h"
 
 /*! @file egyeb.c
  * \brief Egyéb függvényeket tartalmazó modul.
